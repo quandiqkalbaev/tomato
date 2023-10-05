@@ -8,9 +8,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: $grey;
+  color: $dark;
   scroll-behavior: smooth;
   background: inherit;
 }
@@ -20,12 +20,11 @@ body {
 }
 
 .container {
-  max-width: 1180px;
-  padding: 0 10px;
   margin: 0 auto;
 }
 
 @import "./blocks/header";
 @import "./blocks/intro";
+@import "./blocks/info";
+@import "./blocks/about";
 @import "./blocks/footer";
-
