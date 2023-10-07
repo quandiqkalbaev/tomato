@@ -26,6 +26,28 @@ body {
   overflow: hidden;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none !important;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .container {
   margin: 0 auto;
 }
@@ -34,8 +56,11 @@ body {
 @import "./blocks/intro";
 @import "./blocks/info";
 @import "./blocks/about";
+@import "./blocks/assortment";
+@import "./blocks/recipe";
 @import "./blocks/buy";
 @import "./blocks/player";
 @import "./blocks/event";
 @import "./blocks/event-modal";
+@import "./blocks/buy-modal";
 @import "./blocks/footer";

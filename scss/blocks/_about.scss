@@ -1,5 +1,10 @@
 .about {
   padding: 130px 0 564px;
+  background-image: url("../../images//about/about-bg.png");
+  background-position: center center; // x y
+  background-size: cover;
+  background-repeat: no-repeat;
+
   &__title {
     text-align: center;
     font-family: Cocogoose Narrow;

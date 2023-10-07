@@ -14,29 +14,50 @@
     font-size: 72px;
     text-transform: uppercase;
   }
-  &__list {
+
+  .tabs {
     margin-top: 70px;
     display: flex;
     column-gap: 15px;
     align-self: center;
-    &-item {
+
+    &__item {
       min-width: 162px;
-      min-height: 49px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: inline-block;
+      padding: 13px 25px;
       font-size: 15px;
-      line-height: 140%;
+      color: $dark;
+      line-height: 1.4;
+      text-align: center;
       border-radius: 100px;
       border: 1px solid #e2e2e2;
       cursor: pointer;
-    }
-    &-item-active {
-      color: #fff;
-      border: 1px solid transparent;
-      background-color: $primary;
+      transition: all 0.2s linear;
+
+      &--active {
+        color: $white;
+        border-color: #f02c38;
+        background-color: #f02c38;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          color: $white;
+          border-color: #f02c38;
+          background-color: #f02c38;
+        }
+      }
+
+      @media (hover: none) {
+        &:active {
+          color: $white;
+          border-color: #f02c38;
+          background-color: #f02c38;
+        }
+      }
     }
   }
+
   &__items {
     margin-top: 70px;
     display: grid;
@@ -91,12 +112,15 @@
     &__title {
       font-size: 56px;
     }
-    &__list {
+
+    .tabs {
       margin-top: 50px;
-      &-item {
+
+      &__item {
         min-width: 139px;
       }
     }
+
     &-container {
       padding: 0 20px;
     }
@@ -118,12 +142,14 @@
     &__title {
       font-size: 36px;
     }
-    &__list {
+
+    .tabs {
       margin-top: 40px;
-      &-item {
+      &__item {
         font-size: 13px;
       }
     }
+
     &-container {
       padding: 0 15px;
     }
