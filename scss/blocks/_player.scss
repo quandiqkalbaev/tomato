@@ -1,0 +1,135 @@
+// .player {
+//   margin-top: 170px;
+//   position: relative;
+//   &-container {
+//     max-width: 2020px;
+//     min-height: 950px;
+//     padding: 0 50px;
+//   }
+//   &__inner {
+//     position: relative;
+//     height: 100%;
+//     &--active {
+//       position: fixed;
+//       height: 100vh;
+//       width: 100vw;
+//       left: 0;
+//       top: 0;
+//       z-index: 9999;
+//     }
+//   }
+//   .video__player {
+//     border-radius: 40px;
+//     width: 100%;
+//     height: 100%;
+//     source {
+//       border-radius: 20px;
+//     }
+//   }
+//   .video__player--active {
+//     border-radius: 0;
+//   }
+
+//   &__progress {
+//     position: absolute;
+//     width: calc(100% - 100px);
+//     height: 2px;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     bottom: 100px;
+//     progress::-webkit-progress-bar {
+//       background-color: $white;
+//     }
+//     progress::-webkit-progress-value {
+//       background: $primary;
+//       transition: width 500ms linear;
+//     }
+//     progress {
+//       width: 100%;
+//       height: 2px;
+//     }
+//   }
+//   &__play {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+//   &__exit {
+//     position: absolute;
+//     right: 30px;
+//     top: 30px;
+//   }
+// }
+
+// @media (max-width: 1920px) {
+//   .player {
+//     &-container {
+//       min-height: auto;
+//       max-height: 750px;
+//     }
+//     &__inner{
+//     }
+//     .video__player {
+
+//     }
+//   }
+// }
+
+.player {
+  margin-top: 170px;
+  border: 1px solid red;
+
+  &-container {
+    max-width: 2020px;
+    padding: 0 50px;
+  }
+  &__inner {
+    position: relative;
+  }
+  &__video {
+    width: 100%;
+    border-radius: 40px;
+    &--active {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      z-index: 9;
+      border-radius: 0;
+    }
+  }
+  &__progress {
+    position: absolute;
+    width: calc(100% - 100px);
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    progress::-webkit-progress-bar {
+      background-color: $white;
+    }
+    progress::-webkit-progress-value {
+      background: $primary;
+      transition: width 500ms linear;
+    }
+    progress {
+      width: 100%;
+      height: 2px;
+    }
+  }
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__exit {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+}

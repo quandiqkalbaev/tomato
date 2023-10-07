@@ -1,0 +1,149 @@
+.event {
+  padding-top: 204px;
+  &-container {
+    max-width: 2020px;
+    padding: 0 50px;
+  }
+  &__inner {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      right: 0;
+      bottom: 30px;
+      width: calc(100% - 233px);
+      height: 1px;
+      background-color: #e8e8e8;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-family: Cocogoose Narrow;
+    font-size: 72px;
+    text-transform: uppercase;
+  }
+  &__items {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 15px;
+  }
+  &__item {
+    cursor: pointer;
+    &-img {
+      border-radius: 40px;
+    }
+    &-date {
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 140%;
+      opacity: 0.5;
+    }
+    &-title {
+      max-width: 507px;
+      margin-top: 5px;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 140%;
+    }
+    &-more {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      span {
+        display: flex;
+        align-items: center;
+      }
+      p {
+        color: $primary;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+        margin-left: 10px;
+      }
+    }
+  }
+  &__more {
+    min-width: 213px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 100px;
+    background: #f02c38;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .event {
+    padding-top: 130px;
+  }
+}
+@media (max-width: 1200px) {
+  .event {
+    &__items {
+      margin-top: 70px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item {
+      &-title {
+        font-size: 20px;
+      }
+      &-more {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .event {
+    &-container {
+      padding: 0 20px;
+    }
+    &__title {
+      font-size: 56px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .event {
+    padding-top: 70px;
+    &-container {
+      padding: 0 15px;
+    }
+    &__title {
+      font-size: 36px;
+    }
+    &__inner {
+      &::after {
+        display: none;
+      }
+    }
+    &__items {
+      margin-top: 50px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__item {
+      &-title {
+        font-size: 16px;
+      }
+      &-more {
+        font-size: 13px;
+      }
+    }
+    &__more {
+      max-width: 100%;
+      min-height: 50px;
+      width: 100%;
+      font-size: 15px;
+    }
+  }
+}

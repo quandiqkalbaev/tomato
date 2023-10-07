@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+
     <!-- Header Area Start -->
     <header class="header">
       <div class="container header-container">
@@ -81,7 +82,7 @@
       </section>
       <!-- Info area End -->
 
-      <!-- about area Start -->
+      <!-- About area Start -->
       <section class="about">
         <div class="container about-container">
           <div class="about__inner">
@@ -121,26 +122,233 @@
           </div>
         </div>
       </section>
-      <!-- about area End -->
+      <!-- About area End -->
 
+      <!-- Buy area Start -->
       <section class="buy">
         <div class="container buy-container">
           <div class="buy__inner">
-            <h2 class="buy__title">Где купить</h2>
+            <h2 class="buy__title">где купить</h2>
+            <ul class="buy__list">
+              <li class="buy__list-item buy__list-item-active">Маркетплейсы</li>
+              <li class="buy__list-item">Онлайн</li>
+            </ul>
+            <div class="buy__items buy__items-marketplace">
+              <a href="#" class="buy__item">
+                <img src="./images/buy/vprok.svg" alt="buy-item" />
+              </ф>
+              <a href="#" class="buy__item">
+                <img src="./images/buy/ozon.png" alt="buy-item" />
+              </a>
+              <a href="#" class="buy__item">
+                <img src="./images/buy/wb.svg" alt="buy-item" />
+              </a>
+              <a href="#" class="buy__item">
+                <img src="./images/buy/sber.png" alt="buy-item" />
+              </a>
+              <a href="#" class="buy__item">
+                <img src="./images/buy/yandex.svg" alt="buy-item" />
+              </a>
+            </div>  
+             <!-- <div class="buy__items buy__items-online">
+              <a href="#" class="buy__item">
+                <img src="./images/buy/vprok.svg" alt="buy-item" />
+              </ф>
+              <a href="#" class="buy__item">
+                <img src="./images/buy/ozon.png" alt="buy-item" />
+              </a>
+              <a href="#" class="buy__item">
+                <img src="./images/buy/wb.svg" alt="buy-item" />
+              </a>
+              <a href="#" class="buy__item">
+                <img src="./images/buy/sber.png" alt="buy-item" />
+              </a>
+              <a href="#" class="buy__item">
+                <img src="./images/buy/yandex.svg" alt="buy-item" />
+              </a>
+            </div> -->
+            <button class="buy__more">Показать еще</button>
           </div>
         </div>
       </section>
+      <!-- Buy area Start -->
+
+      <!-- Video-Player area Start -->
+      <section class="player">
+        <div class="container player-container">
+          <div class="player__inner">
+            <video
+            class="player__video" id="video-player"
+          >
+            <source src="./videos/10.mp4" type="video/mp4" />
+          </video>
+            <div class="player__progress"><progress id="progress" max="100" value="0"></progress></div>
+            <div class="player__play"><button><img src="./images/video/play.svg" alt=""></button></div>
+            <div class="player__exit"><button><img src="./images/video/exit.svg" alt=""></button></div>
+        
+          </div> 
+        </div>
+      </section>
+      <!-- Video-Player area End -->
+
+      <!-- Event area Start -->
+      <section class="event">
+        <div class="container event-container">
+          <div class="event__inner">
+            <h2 class="event__title">События бренда</h2>
+            <div class="event__items">
+              <div class="event__item">
+                <div class="event__item-img">
+                  <img src="./images/event/img-1.png" alt="event-img" />
+                </div>
+                <p class="event__item-date">23.06.23</p>
+                <p class="event__item-title">«Помидорка» выпустила линейку томатных соусов</p>
+                <div class="event__item-more">
+                  <span><img src="./images/event/plus.svg" alt="plus" /></span>
+                  <p>Подробнее</p>
+                </div>
+              </div>
+              <div class="event__item">
+                <div class="event__item-img">
+                  <img src="./images/event/img-2.png" alt="event-img" />
+                </div>
+                <p class="event__item-date">23.06.23</p>
+                <p class="event__item-title">Кетчупы «Помидорка» вышли в новом дизайне</p>
+                <div class="event__item-more">
+                  <span><img src="./images/event/plus.svg" alt="plus" /></span>
+                  <p>Подробнее</p>
+                </div>
+              </div>
+              <div class="event__item">
+                <div class="event__item-img">
+                  <img src="./images/event/img-3.png" alt="event-img" />
+                </div>
+                <p class="event__item-date">23.06.23</p>
+                <p class="event__item-title">«Помидорка» выпустила томатную пасту в новом объеме</p>
+                <div class="event__item-more">
+                  <span><img src="./images/event/plus.svg" alt="plus" /></span>
+                  <p>Подробнее</p>
+                </div>
+              </div>
+              <div class="event__item">
+                <div class="event__item-img">
+                  <img src="./images/event/img-4.png" alt="event-img" />
+                </div>
+                <p class="event__item-date">23.06.23</p>
+                <p class="event__item-title">Выпуск "Шоу рецептов и шалостей" к новому году</p>
+                <div class="event__item-more">
+                  <span><img src="./images/event/plus.svg" alt="plus" /></span>
+                  <p>Подробнее</p>
+                </div>
+              </div>
+              <div class="event__item">
+                <div class="event__item-img">
+                  <img src="./images/event/img-5.png" alt="event-img" />
+                </div>
+                <p class="event__item-date">23.06.23</p>
+                <p class="event__item-title">Выпуск "Шоу рецептов и шалостей" к новому году</p>
+                <div class="event__item-more">
+                  <span><img src="./images/event/plus.svg" alt="plus" /></span>
+                  <p>Подробнее</p>
+                </div>
+              </div>
+              <div class="event__item">
+                <div class="event__item-img">
+                  <img src="./images/event/img-6.png" alt="event-img" />
+                </div>
+                <p class="event__item-date">23.06.23</p>
+                <p class="event__item-title">«Помидорка» выпустила линейку томатных соусов</p>
+                <div class="event__item-more">
+                  <span><img src="./images/event/plus.svg" alt="plus" /></span>
+                  <p>Подробнее</p>
+                </div>
+              </div>
+            </div>
+         
+            <button class="event__more">Показать еще</button>
+          </div>
+        </div>
+        <div class="event__modal">
+          <div class="event__content">
+            <div class="event__modal-left">
+              <img src="./images/event/modal.jpg" alt="">
+            </div>
+            <div class="event__modal-right">
+              <p class="event__modal-date">15.06.2023</p>
+              <p class="event__modal-title">Кетчупы «Помидорка» вышли в новом дизайне</p>
+              <p class="event__modal-text">
+                «Помидорка» провела редизайн упаковки кетчупов. Теперь покупателей ждут еще более яркие и стильные шашлычный, острый 
+                и томатный кетчупы.<br><br>
+                Теперь вы точно не пропустите продукцию «Помидорка» на полках магазинов. Все три вида кетчупа получили новые дизайны упаковок. Они стали еще более яркими, аппетитными и привлекательными. Упаковка матовая, тактильно-приятная. Она даст понять, что перед вами премиальный продукт! А ощущения от прикосновений 
+                к упаковке будут не менее яркими, чем гастрономические.<br><br>
+                Скорее ищите обновленные кетчупы «Помидорка» на полках магазинов! И пускай они радуют вас своими изысканными вкусами 
+                как на шашлыках на природе, так и дома за семейным столом.
+              </p>
+              <button class="event__modal-close">Закрыть</button>
+              <span class="event__modal-times"><img src="./images/event/times.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Event area End -->
     </main>
 
     <!-- Footer area Start -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer__inner"></div>
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__left">
+            <a class="footer__logo" href="./index.html">
+              <img src="./images/footer/logo.svg" alt="footer-logo" />
+            </a>
+          </div>
+
+          <div class="footer__right">
+            <div class="footer__contacts">
+              <p class="footer__title">Контакты:</p>
+              <div class="footer__contacts-list">
+                <a href="tel:+88004333344" class="footer__contacts-item footer__contacts-tel">8 (800) 433-3344</a>
+                <a href="mailto:info@pomidorka.ru" class="footer__contacts-item footer__contacts-mail"
+                  >info@pomidorka.ru</a
+                >
+              </div>
+            </div>
+            <div class="footer__socials">
+              <p class="footer__title">Мы в социальных сетях:</p>
+              <div class="footer__socials-list">
+                <a href="#" class="footer__socials-item"><img src="./images/footer/vk.svg" alt="social-logo" /></a>
+                <a href="#" class="footer__socials-item"><img src="./images/footer/utube.svg" alt="social-logo" /></a>
+                <a href="#" class="footer__socials-item"><img src="./images/footer/ok.svg" alt="social-logo" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__ticker">
+          <p class="footer__ticker-item">вкус творчества</p>
+          <p class="footer__ticker-item">вкус творчества</p>
+          <p class="footer__ticker-item">вкус творчества</p>
+          <p class="footer__ticker-item">вкус творчества</p>
+          <p class="footer__ticker-item">вкус творчества</p>
+        </div>
+        <div class="footer__bot">
+          <p class="footer__bot-text">© Все права зищищены</p>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#" class="footer__list-link">Политика конфедициальности</a></li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Политика обработки персональных данных</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Политика обработки файлов cookies </a>
+            </li>
+            <li class="footer__list-item"><a href="#" class="footer__list-link"> Банковские реквизиты</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
     <!-- Footer area End -->
 
     <!-- Js settings -->
     <script src="./js/main.js"></script>
+
   </body>
 </html>

@@ -1,0 +1,153 @@
+.event {
+  position: relative;
+  &__modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    &-right {
+      padding: 40px 50px 85px;
+    }
+    &-left {
+      img {
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+      }
+    }
+    &-date {
+      font-size: 14px;
+      line-height: 140%;
+      opacity: 0.5;
+    }
+    &-title {
+      margin-top: 10px;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 140%;
+    }
+    &-text {
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 140%;
+    }
+    &-close {
+      margin-top: 30px;
+      color: $primary;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 140%;
+    }
+    &-times {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+  }
+  &__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1514px;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 20px;
+  }
+}
+@media (max-width: 1920px) {
+  .event {
+    &__content {
+      width: 1340px;
+    }
+    &__modal {
+      &-right {
+        padding: 40px 22px 85px 50px;
+      }
+      &-title {
+        max-width: 529px;
+        margin-top: 0;
+        font-size: 24px;
+      }
+      &-text {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+      &-close {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .event {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      width: 728px;
+      height: calc(100% - 70px);
+      top: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 20px 20px 0 0;
+    }
+    &__modal {
+      &-left {
+        img {
+          border-radius: 20px 20px 0 0;
+          width: 100%;
+        }
+      }
+      &-right {
+        padding: 20px 30px 70px;
+      }
+      &-date {
+        font-size: 12px;
+      }
+      &-times {
+        top: -20px;
+        right: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .event {
+    &__content {
+      width: 100%;
+      top: 50px;
+      height: calc(100% - 50px);
+    }
+
+    &__modal {
+      &-date {
+        font-size: 10px;
+      }
+      &-right {
+        top: 50px;
+        padding: 10px 15px 70px;
+      }
+      &-left {
+        max-height: 284px;
+        display: flex;
+        justify-content: center;
+        img {
+          width: auto;
+        }
+      }
+      &-title {
+        font-size: 18px;
+        max-width: 100%;
+      }
+      &-text {
+        font-size: 14px;
+      }
+      &-close {
+        display: none;
+      }
+    }
+  }
+}

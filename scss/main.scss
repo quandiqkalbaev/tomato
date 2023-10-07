@@ -15,6 +15,13 @@ body {
   background: inherit;
 }
 
+.body-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
 .no-scroll {
   overflow: hidden;
 }
@@ -27,4 +34,8 @@ body {
 @import "./blocks/intro";
 @import "./blocks/info";
 @import "./blocks/about";
+@import "./blocks/buy";
+@import "./blocks/player";
+@import "./blocks/event";
+@import "./blocks/event-modal";
 @import "./blocks/footer";
