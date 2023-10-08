@@ -8,6 +8,7 @@
     <title>Document</title>
 
     <!-- style -->
+    <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/swiper-boundle.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -4556,18 +4557,20 @@
       </section>
       <!-- Buy area Start -->
 
+      
       <!-- Video-Player area Start -->
       <section class="player">
         <div class="container player-container">
           <div class="player__inner">
             <video
-            class="player__video" id="video-player"
+           
+            class="player__video" id="video-player" poster="./images/video/poster.png"
           >
             <source src="./videos/10.mp4" type="video/mp4" />
           </video>
             <div class="player__progress"><progress id="progress" max="100" value="0"></progress></div>
             <div class="player__play"><button><img src="./images/video/play.svg" alt=""></button></div>
-            <div class="player__exit"><button><img src="./images/video/exit.svg" alt=""></button></div>
+            <div class="player__exit"><span></span></div>
         
           </div> 
         </div>
@@ -4575,7 +4578,7 @@
       <!-- Video-Player area End -->
 
       <!-- Event area Start -->
-      <section class="event">
+      <section class="event" id="section-event">
         <div class="container event-container">
           <div class="event__inner">
             <h2 class="event__title">События бренда</h2>
@@ -4782,6 +4785,7 @@
     <!-- Footer area End -->
 
     <!-- Js settings -->
+    <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
     <script src="./js/swiper-boundle.min.js"></script>
     <script src="./js/main.js"></script>
 

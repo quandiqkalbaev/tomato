@@ -26,19 +26,31 @@ hamburger.addEventListener("click", (e) => {
 let video = document.querySelector("#video-player"),
   progress = document.querySelector("#progress"),
   playerPlay = document.querySelector(".player__play"),
+  playerProgress = document.querySelector(".player__progress"),
   playerExit = document.querySelector(".player__exit"),
   playerWindow = document.querySelector(".player__inner");
 
-progress.style.display = "none";
+playerProgress.style.display = "none";
+playerExit.style.display = "none";
 
 function play() {
-  progress.style.display = "block";
+  document.body.classList.add("no-scroll");
+  playerProgress.style.display = "block";
+  playerExit.style.display = "block";
+
+  playerExit.classList.add("player__exit--fixed");
+  playerProgress.classList.add("player__progress--fixed");
   video.play();
 }
 
 function stop() {
   video.pause();
-  progress.style.display = "none";
+
+  playerProgress.style.display = "none";
+  playerExit.style.display = "none";
+  playerExit.classList.remove("player__exit--fixed");
+  playerProgress.classList.remove("player__progress--fixed");
+
   video.currentTime = 0;
   progress.value = 0;
   video.poster = "./images/video/poster.png";
@@ -47,59 +59,81 @@ function stop() {
 function progressUpdate() {
   let d = video.duration;
   let c = video.currentTime;
-  progress.value = (100 * c) / d;
+  if (!isNaN(d) && !isNaN(c) && isFinite(d) && isFinite(c)) {
+    progress.value = (100 * c) / d;
+  }
 }
 playerPlay.addEventListener("click", (e) => {
   video.classList.add("player__video--active");
+  playerWindow.classList.add("player__inner--active");
   play();
   playerPlay.style.display = "none";
 });
 
 playerExit.addEventListener("click", () => {
   video.classList.remove("player__video--active");
+  playerWindow.classList.remove("player__inner--active");
+  document.body.classList.remove("no-scroll");
+  video.load();
+  const sectionEvent = document.querySelector("#section-event");
+  if (sectionEvent) {
+    sectionEvent.scrollIntoView({
+      behavior: "smooth", // You can change this to "auto" for instant scrolling
+      block: "start", // This aligns the top of the section with the top of the viewport
+    });
+  }
   stop();
   playerPlay.style.display = "block";
 });
 video.addEventListener("ended", () => {
+  video.load();
   video.classList.remove("player__video--active");
+  playerWindow.classList.remove("player__inner--active");
+  document.body.classList.remove("no-scroll");
+
   playerPlay.style.display = "block";
-  progress.style.display = "none";
+  playerProgress.style.display = "none";
+  playerExit.style.display = "none";
+  const sectionEvent = document.querySelector("#section-event");
+  if (sectionEvent) {
+    sectionEvent.scrollIntoView({
+      behavior: "smooth", // You can change this to "auto" for instant scrolling
+      block: "start", // This aligns the top of the section with the top of the viewport
+    });
+  }
 });
 video.addEventListener("timeupdate", () => {
   progressUpdate();
 });
 
-//Event-modal
-
 let modals = document.querySelectorAll(".event__item"),
   eventModal = document.querySelector(".event__modal"),
+  eventContent = document.querySelector(".event__content"),
   closeBtn = document.querySelector(".event__modal-close"),
   timesBtn = document.querySelector(".event__modal-times");
 
 modals.forEach((e) => {
   e.addEventListener("click", function () {
-    eventModal.style.display = "block";
     document.body.classList.add("no-scroll");
+    eventContent.classList.add("event__content--active");
+    eventModal.classList.add("event__modal--active");
   });
 
   closeBtn.addEventListener("click", function () {
-    eventModal.style.display = "none";
     document.body.classList.remove("no-scroll");
+    eventContent.classList.remove("event__content--active");
+    eventModal.classList.remove("event__modal--active");
   });
   timesBtn.addEventListener("click", function () {
-    eventModal.style.display = "none";
     document.body.classList.remove("no-scroll");
+    eventContent.classList.remove("event__content--active");
+    eventModal.classList.remove("event__modal--active");
   });
 });
 
 try {
   class Tab {
-    constructor(
-      tabSelector,
-      contentSelector,
-      activeTabClass,
-      hiddenContentClass
-    ) {
+    constructor(tabSelector, contentSelector, activeTabClass, hiddenContentClass) {
       this.tabs = document.querySelectorAll(tabSelector);
       this.contents = document.querySelectorAll(contentSelector);
       this.activeTabClass = activeTabClass || "tabs__item--active";
@@ -141,23 +175,14 @@ try {
   // Использование класса для создания табуляции
   const recipeTab = new Tab(".recipe .tabs__item", ".recipe .tabs__catalog");
 
-  const assortmentTab = new Tab(
-    ".assortment .tabs__item",
-    ".assortment .tabs__catalog"
-  );
+  const assortmentTab = new Tab(".assortment .tabs__item", ".assortment .tabs__catalog");
 
   const buyTab = new Tab(".buy .tabs__item", ".buy .tabs__catalog");
 } catch (e) {}
 
 try {
   class Tab {
-    constructor(
-      sliderSelector,
-      tabSelector,
-      contentSelector,
-      activeTabClass,
-      hiddenContentClass
-    ) {
+    constructor(sliderSelector, tabSelector, contentSelector, activeTabClass, hiddenContentClass) {
       this.sliders = document.querySelectorAll(sliderSelector);
       this.tabSelector = tabSelector;
       this.contentSelector = contentSelector;
@@ -206,12 +231,7 @@ try {
     }
   }
 
-  // Использование класса для создания табуляции в слайдерах
-  const sliderTabs = new Tab(
-    ".r-item",
-    ".r-item__tabs-item",
-    ".r-item__tabs-catalog"
-  );
+  const sliderTabs = new Tab(".r-item", ".r-item__tabs-item", ".r-item__tabs-catalog");
 } catch (e) {}
 
 try {
