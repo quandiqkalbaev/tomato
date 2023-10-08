@@ -26,12 +26,12 @@
   }
 
   &__logo {
-    transition: all 0.2s linear;
+    transition: transform 0.2s linear;
     transform: rotate(1.932deg);
 
     &--active {
       transform: translateY(30px) rotate(1.932deg);
-      opacity: 0;
+      display: none;
     }
   }
 
