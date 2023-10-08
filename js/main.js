@@ -53,7 +53,7 @@ function stop() {
 
   video.currentTime = 0;
   progress.value = 0;
-  video.poster = "./images/video/poster.png";
+  video.poster = "./images/video/poster.webp";
 }
 
 function progressUpdate() {
