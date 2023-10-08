@@ -1,24 +1,24 @@
 //preloader
-const preloader = document.querySelector(".preloader");
-const preloaderLogo = document.querySelector(".preloader__logo");
-const preloaderProgress = document.querySelector(".preloader__progress");
-const progressBar = document.querySelector(".preloader__progress-inner");
-let count = 4;
-let loading = setInterval(animate, 50);
-document.body.classList.add("no-scroll");
+// const preloader = document.querySelector(".preloader");
+// const preloaderLogo = document.querySelector(".preloader__logo");
+// const preloaderProgress = document.querySelector(".preloader__progress");
+// const progressBar = document.querySelector(".preloader__progress-inner");
+// let count = 4;
+// let loading = setInterval(animate, 50);
+// document.body.classList.add("no-scroll");
 
-function animate() {
-  if (count > 110) {
-    clearInterval(loading);
-    preloaderProgress.style.opacity = "0";
-    preloaderLogo.classList.add("preloader__logo--active");
-    preloader.classList.add("preloader--active");
-    document.body.classList.remove("no-scroll");
-  } else {
-    count += 2.5;
-    progressBar.style.width = count + "%";
-  }
-}
+// function animate() {
+//   if (count > 110) {
+//     clearInterval(loading);
+//     preloaderProgress.style.opacity = "0";
+//     preloaderLogo.classList.add("preloader__logo--active");
+//     preloader.classList.add("preloader--active");
+//     document.body.classList.remove("no-scroll");
+//   } else {
+//     count += 2.5;
+//     progressBar.style.width = count + "%";
+//   }
+// }
 
 // Burger Menu
 const hamburger = document.querySelector(".hamburger");
