@@ -1,25 +1,24 @@
-try {
-  const preloader = document.querySelector(".preloader");
-  const preloaderLogo = document.querySelector(".preloader__logo");
-  const progress = document.querySelector(".preloader__progress");
-  const progressBar = document.querySelector(".preloader__progress-inner");
-  let count = 4;
-  let loading = setInterval(animate, 50);
-  document.body.classList.add("no-scroll");
+//preloader
+const preloader = document.querySelector(".preloader");
+const preloaderLogo = document.querySelector(".preloader__logo");
+const preloaderProgress = document.querySelector(".preloader__progress");
+const progressBar = document.querySelector(".preloader__progress-inner");
+let count = 4;
+let loading = setInterval(animate, 50);
+document.body.classList.add("no-scroll");
 
-  function animate() {
-    if (count > 110) {
-      clearInterval(loading);
-      progress.style.opacity = "0";
-      preloaderLogo.classList.add("preloader__logo--active");
-      preloader.classList.add("preloader--active");
-      document.body.classList.remove("no-scroll");
-    } else {
-      count += 2.5;
-      progressBar.style.width = count + "%";
-    }
+function animate() {
+  if (count > 110) {
+    clearInterval(loading);
+    preloaderProgress.style.opacity = "0";
+    preloaderLogo.classList.add("preloader__logo--active");
+    preloader.classList.add("preloader--active");
+    document.body.classList.remove("no-scroll");
+  } else {
+    count += 2.5;
+    progressBar.style.width = count + "%";
   }
-} catch (e) {}
+}
 
 // Burger Menu
 const hamburger = document.querySelector(".hamburger");
@@ -52,15 +51,9 @@ let video = document.querySelector("#video-player"),
   playerProgress = document.querySelector(".player__progress"),
   playerExit = document.querySelector(".player__exit"),
   playerWindow = document.querySelector(".player__inner");
-
-playerProgress.style.display = "none";
-playerExit.style.display = "none";
-
+const sectionEvent = document.querySelector("#section-event");
 function play() {
   document.body.classList.add("no-scroll");
-  playerProgress.style.display = "block";
-  playerExit.style.display = "block";
-
   playerExit.classList.add("player__exit--fixed");
   playerProgress.classList.add("player__progress--fixed");
   video.play();
@@ -68,15 +61,11 @@ function play() {
 
 function stop() {
   video.pause();
-
-  playerProgress.style.display = "none";
-  playerExit.style.display = "none";
   playerExit.classList.remove("player__exit--fixed");
   playerProgress.classList.remove("player__progress--fixed");
-
   video.currentTime = 0;
   progress.value = 0;
-  video.poster = "./images/video/poster.png";
+  video.poster = "./images/video/poster.webp";
 }
 
 function progressUpdate() {
@@ -98,11 +87,10 @@ playerExit.addEventListener("click", () => {
   playerWindow.classList.remove("player__inner--active");
   document.body.classList.remove("no-scroll");
   video.load();
-  const sectionEvent = document.querySelector("#section-event");
   if (sectionEvent) {
     sectionEvent.scrollIntoView({
-      behavior: "smooth", // You can change this to "auto" for instant scrolling
-      block: "start", // This aligns the top of the section with the top of the viewport
+      behavior: "smooth",
+      block: "start",
     });
   }
   stop();
@@ -113,22 +101,20 @@ video.addEventListener("ended", () => {
   video.classList.remove("player__video--active");
   playerWindow.classList.remove("player__inner--active");
   document.body.classList.remove("no-scroll");
-
   playerPlay.style.display = "block";
-  playerProgress.style.display = "none";
-  playerExit.style.display = "none";
-  const sectionEvent = document.querySelector("#section-event");
+  playerExit.classList.remove("player__exit--fixed");
+  playerProgress.classList.remove("player__progress--fixed");
   if (sectionEvent) {
     sectionEvent.scrollIntoView({
-      behavior: "smooth", // You can change this to "auto" for instant scrolling
-      block: "start", // This aligns the top of the section with the top of the viewport
+      behavior: "smooth",
+      block: "start",
     });
   }
 });
 video.addEventListener("timeupdate", () => {
   progressUpdate();
 });
-
+//event modals
 let modals = document.querySelectorAll(".event__item"),
   eventModal = document.querySelector(".event__modal"),
   eventContent = document.querySelector(".event__content"),
@@ -164,12 +150,7 @@ modals.forEach((e) => {
 
 try {
   class Tab {
-    constructor(
-      tabSelector,
-      contentSelector,
-      activeTabClass,
-      hiddenContentClass
-    ) {
+    constructor(tabSelector, contentSelector, activeTabClass, hiddenContentClass) {
       this.tabs = document.querySelectorAll(tabSelector);
       this.contents = document.querySelectorAll(contentSelector);
       this.activeTabClass = activeTabClass || "tabs__item--active";
@@ -211,23 +192,14 @@ try {
   // Использование класса для создания табуляции
   const recipeTab = new Tab(".recipe .tabs__item", ".recipe .tabs__catalog");
 
-  const assortmentTab = new Tab(
-    ".assortment .tabs__item",
-    ".assortment .tabs__catalog"
-  );
+  const assortmentTab = new Tab(".assortment .tabs__item", ".assortment .tabs__catalog");
 
   const buyTab = new Tab(".buy .tabs__item", ".buy .tabs__catalog");
 } catch (e) {}
 
 try {
   class Tab {
-    constructor(
-      sliderSelector,
-      tabSelector,
-      contentSelector,
-      activeTabClass,
-      hiddenContentClass
-    ) {
+    constructor(sliderSelector, tabSelector, contentSelector, activeTabClass, hiddenContentClass) {
       this.sliders = document.querySelectorAll(sliderSelector);
       this.tabSelector = tabSelector;
       this.contentSelector = contentSelector;
@@ -276,11 +248,7 @@ try {
     }
   }
 
-  const sliderTabs = new Tab(
-    ".r-item",
-    ".r-item__tabs-item",
-    ".r-item__tabs-catalog"
-  );
+  const sliderTabs = new Tab(".r-item", ".r-item__tabs-item", ".r-item__tabs-catalog");
 } catch (e) {}
 
 try {
