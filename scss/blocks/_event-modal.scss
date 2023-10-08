@@ -47,9 +47,73 @@
       line-height: 140%;
     }
     &-times {
+      display: block;
+      width: 13px;
+      height: 13px;
       position: absolute;
       top: 30px;
       right: 30px;
+      cursor: pointer;
+
+      span {
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          display: block;
+          width: 16px;
+          height: 2px;
+          background: $primary;
+          transform: translate(-50%, -50%) rotate(-45deg);
+          transition: all 0.2s linear;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          display: block;
+          width: 16px;
+          height: 2px;
+          background: $primary;
+          transform: translate(-50%, -50%) rotate(45deg);
+          transition: all 0.2s linear;
+        }
+      }
+
+      &--active {
+        span {
+          display: block;
+          width: 13px;
+          height: 13px;
+          position: relative;
+
+          &::before {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 2.1px;
+            background: $primary;
+            transform: translate(-50%, -50%) rotate(0);
+          }
+
+          &::after {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 2.1px;
+            background: $primary;
+            transform: translate(-50%, -50%) rotate(0);
+          }
+        }
+      }
     }
   }
   &__content {

@@ -1,3 +1,26 @@
+try {
+  const preloader = document.querySelector(".preloader");
+  const preloaderLogo = document.querySelector(".preloader__logo");
+  const progress = document.querySelector(".preloader__progress");
+  const progressBar = document.querySelector(".preloader__progress-inner");
+  let count = 4;
+  let loading = setInterval(animate, 50);
+  document.body.classList.add("no-scroll");
+
+  function animate() {
+    if (count > 110) {
+      clearInterval(loading);
+      progress.style.opacity = "0";
+      preloaderLogo.classList.add("preloader__logo--active");
+      preloader.classList.add("preloader--active");
+      document.body.classList.remove("no-scroll");
+    } else {
+      count += 2.5;
+      progressBar.style.width = count + "%";
+    }
+  }
+} catch (e) {}
+
 // Burger Menu
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".header__nav");
@@ -53,7 +76,7 @@ function stop() {
 
   video.currentTime = 0;
   progress.value = 0;
-  video.poster = "./images/video/poster.webp";
+  video.poster = "./images/video/poster.png";
 }
 
 function progressUpdate() {
@@ -124,16 +147,29 @@ modals.forEach((e) => {
     eventContent.classList.remove("event__content--active");
     eventModal.classList.remove("event__modal--active");
   });
+
   timesBtn.addEventListener("click", function () {
-    document.body.classList.remove("no-scroll");
-    eventContent.classList.remove("event__content--active");
-    eventModal.classList.remove("event__modal--active");
+    timesBtn.classList.add("event__modal-times--active");
+    setTimeout(() => {
+      document.body.classList.remove("no-scroll");
+      eventContent.classList.remove("event__content--active");
+      eventModal.classList.remove("event__modal--active");
+    }, 300);
+
+    setTimeout(() => {
+      timesBtn.classList.remove("event__modal-times--active");
+    }, 1000);
   });
 });
 
 try {
   class Tab {
-    constructor(tabSelector, contentSelector, activeTabClass, hiddenContentClass) {
+    constructor(
+      tabSelector,
+      contentSelector,
+      activeTabClass,
+      hiddenContentClass
+    ) {
       this.tabs = document.querySelectorAll(tabSelector);
       this.contents = document.querySelectorAll(contentSelector);
       this.activeTabClass = activeTabClass || "tabs__item--active";
@@ -175,14 +211,23 @@ try {
   // Использование класса для создания табуляции
   const recipeTab = new Tab(".recipe .tabs__item", ".recipe .tabs__catalog");
 
-  const assortmentTab = new Tab(".assortment .tabs__item", ".assortment .tabs__catalog");
+  const assortmentTab = new Tab(
+    ".assortment .tabs__item",
+    ".assortment .tabs__catalog"
+  );
 
   const buyTab = new Tab(".buy .tabs__item", ".buy .tabs__catalog");
 } catch (e) {}
 
 try {
   class Tab {
-    constructor(sliderSelector, tabSelector, contentSelector, activeTabClass, hiddenContentClass) {
+    constructor(
+      sliderSelector,
+      tabSelector,
+      contentSelector,
+      activeTabClass,
+      hiddenContentClass
+    ) {
       this.sliders = document.querySelectorAll(sliderSelector);
       this.tabSelector = tabSelector;
       this.contentSelector = contentSelector;
@@ -231,7 +276,11 @@ try {
     }
   }
 
-  const sliderTabs = new Tab(".r-item", ".r-item__tabs-item", ".r-item__tabs-catalog");
+  const sliderTabs = new Tab(
+    ".r-item",
+    ".r-item__tabs-item",
+    ".r-item__tabs-catalog"
+  );
 } catch (e) {}
 
 try {
@@ -356,7 +405,13 @@ try {
   });
 
   buyModalClose.addEventListener("click", () => {
-    document.body.classList.remove("no-scroll");
-    buyModal.classList.remove("buy-modal--active");
+    buyModalClose.classList.add("buy-modal__close--active");
+    setTimeout(() => {
+      document.body.classList.remove("no-scroll");
+      buyModal.classList.remove("buy-modal--active");
+    }, 300);
+    setTimeout(() => {
+      buyModalClose.classList.remove("buy-modal__close--active");
+    }, 1000);
   });
 } catch (e) {}

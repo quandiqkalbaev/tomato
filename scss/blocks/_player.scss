@@ -67,7 +67,7 @@
   &__exit {
     width: 150px;
     height: 150px;
-    background-image: url("../../images/video/exit.svg");
+    background-image: url("../images/video/exit.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@
 @media (max-width: 1440px) {
   .player {
     &__exit {
-      background-image: url("../../images/video/exit-720.svg");
+      background-image: url("../images/video/exit-720.svg");
       width: 23px;
       height: 23px;
       right: 20px;

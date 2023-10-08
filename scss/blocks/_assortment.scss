@@ -255,7 +255,7 @@
       border: 1px solid #e2e2e2;
       background: transparent;
 
-      svg path {
+      svg {
         fill: rgba($dark, 0.5);
       }
     }
@@ -273,15 +273,14 @@
       transition: all 0.2s linear;
 
       svg {
+        width: 7px;
+        height: 11px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
-        path {
-          fill: $white;
-          transition: all 0.2s linear;
-        }
+        fill: $white;
+        transition: all 0.2s linear;
       }
 
       @media (hover: hover) {
@@ -289,7 +288,7 @@
           border-color: #f02c38;
           background: #f02c38;
 
-          svg path {
+          svg {
             fill: $white !important;
           }
         }
@@ -300,7 +299,7 @@
           border-color: #f02c38;
           background: #f02c38;
 
-          svg path {
+          svg {
             fill: $white !important;
           }
         }
@@ -378,7 +377,7 @@
 
         background: transparent;
 
-        svg path {
+        svg {
           fill: #f02c38;
         }
 
@@ -386,7 +385,7 @@
           &:hover {
             background: transparent;
 
-            svg path {
+            svg {
               fill: #f02c38 !important;
             }
           }
@@ -396,7 +395,7 @@
           &:active {
             background: transparent;
 
-            svg path {
+            svg {
               fill: #f02c38 !important;
             }
           }

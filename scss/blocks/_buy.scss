@@ -86,6 +86,19 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 140%;
+    transition: all 0.2s linear;
+
+    @media (hover: hover) {
+      &:hover {
+        background: #d9212c;
+      }
+    }
+
+    @media (hover: none) {
+      &:active {
+        background: #d9212c;
+      }
+    }
   }
 }
 
