@@ -7,6 +7,8 @@
     height: 100%;
   }
   &__inner {
+    display: flex;
+    align-items: center;
     position: relative;
     height: 100%;
     &--active {
@@ -19,7 +21,10 @@
       z-index: 100;
     }
   }
-
+  &__wrapper {
+    position: relative;
+    width: 100%;
+  }
   &__video {
     height: 100%;
     width: 100%;
@@ -39,7 +44,7 @@
     &--fixed {
       display: block;
       z-index: 10;
-      position: fixed;
+      position: absolute;
     }
     progress::-webkit-progress-bar {
       background-color: $white;
@@ -79,30 +84,24 @@
     &--fixed {
       display: block;
       z-index: 10;
-      position: fixed;
+      position: absolute;
     }
   }
 }
 @media (max-width: 1920px) {
   .player {
-    min-height: auto;
-    &__progress {
-      width: calc(100% - 200px);
-    }
-    &__exit {
-      right: 60px;
-      top: 40px;
-    }
+    min-height: 754px;
   }
 }
 @media (max-width: 1440px) {
   .player {
+    min-height: 410px;
     &__exit {
       background-image: url("../images/video/exit-720.svg");
       width: 23px;
       height: 23px;
-      right: 20px;
-      top: 60px;
+      right: 25px;
+      top: 25px;
       left: auto;
     }
     &__play {
@@ -111,35 +110,18 @@
     }
     &__progress {
       width: calc(100% - 40px);
-      bottom: calc(100px);
+      bottom: 50px;
     }
-    &__video {
-      &--active {
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    }
+
     &-container {
       padding: 0 20px;
     }
   }
 }
-
-@for $i from 0 to 672 {
-  @media (max-width:#{1440-$i}px) {
-    .player {
-      &__exit {
-        top: calc(60px + #{$i * 0.3}px);
-      }
-      &__progress {
-        bottom: calc(100px + #{$i * 0.3}px);
-      }
-    }
-  }
-}
 @media (max-width: 768px) {
   .player {
+    margin-top: 70px;
+    min-height: 164px;
     &__play {
       width: 70px;
       height: 70px;
@@ -149,45 +131,17 @@
     }
     &__video {
       border-radius: 30px;
+      &--active {
+        border-radius: 0;
+      }
+    }
+    &__exit {
+      width: 16px;
+      height: 16px;
     }
     &__progress {
       width: calc(100% - 30px);
-    }
-  }
-}
-@for $i from 0 to 100 {
-  @media (max-width:#{768-$i}px) {
-    .player {
-      &__exit {
-        top: calc(250px + #{$i/2}px);
-      }
-      &__progress {
-        bottom: calc(280px + #{$i/3}px);
-      }
-    }
-  }
-}
-@for $i from 0 to 200 {
-  @media (max-width:#{668-$i}px) {
-    .player {
-      &__exit {
-        top: calc(300px + #{$i/9}px);
-      }
-      &__progress {
-        bottom: calc(313px + #{$i/5}px);
-      }
-    }
-  }
-}
-@for $i from 0 to 149 {
-  @media (max-width:#{468-$i}px) {
-    .player {
-      &__exit {
-        top: calc(325px + #{$i/3}px);
-      }
-      &__progress {
-        bottom: calc(353px + #{$i/4}px);
-      }
+      bottom: 40px;
     }
   }
 }

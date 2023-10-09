@@ -2834,16 +2834,18 @@
       <section class="player">
         <div class="container player-container">
           <div class="player__inner">
-            <video class="player__video" id="video-player" preload="none" poster="./images/video/poster.webp">
-              <source src="./videos/10.mp4" type="video/mp4" />
-            </video>
-            <div class="player__progress">
-              <progress id="progress" max="100" value="0"></progress>
+            <div class="player__wrapper">
+              <video class="player__video" id="video-player" preload="none" poster="./images/video/poster.webp">
+                <source src="./videos/10.mp4" type="video/mp4" />
+              </video>
+              <div class="player__progress">
+                <progress id="progress" max="100" value="0"></progress>
+              </div>
+              <div class="player__play">
+                <button><img loading="lazy" src="./images/video/play.svg" alt="" /></button>
+              </div>
+              <div class="player__exit"><span></span></div>
             </div>
-            <div class="player__play">
-              <button><img loading="lazy" src="./images/video/play.svg" alt="" /></button>
-            </div>
-            <div class="player__exit"><span></span></div>
           </div>
         </div>
       </section>
