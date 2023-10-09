@@ -15,6 +15,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -32,7 +34,7 @@
       <div class="container header-container">
         <div class="header__inner">
           <a class="header__logo" href="#">
-            <img loading="lazy" src="./images/logo.webp" alt="logo" />
+            <img src="./images/logo.webp" alt="logo" />
           </a>
           <nav class="header__nav">
             <ul class="header__nav-list">
@@ -71,19 +73,19 @@
       <section class="intro">
         <div class="container intro-container">
           <div class="intro__inner">
-            <h1 class="intro__title">Вкус творчества</h1>
+            <h1 class="intro__title" data-aos="fade-up">Вкус творчества</h1>
           </div>
         </div>
-        <div class="intro__bot"></div>
+        <div class="intro__bot" data-aos="fade-up"></div>
       </section>
       <!-- Intro area End -->
 
       <!-- Info area Start -->
       <section class="info">
         <div class="container info-container">
-          <div class="info__inner">
+          <div class="info__inner" data-aos="fade-up" data-aos-delay="100">
             <div class="info__img">
-              <img loading="lazy" src="./images/info/info-img.webp" alt="info-img" />
+              <img src="./images/info/info-img.webp" alt="info-img" />
             </div>
             <p class="info__text">
               «Помидорка» радует покупателей уже более 25 лет. Мы отбираем только самые свежие <br />
@@ -104,40 +106,40 @@
           <div class="about__inner">
             <h2 class="about__title">Только натуральные продукты</h2>
             <div class="about__items">
-              <div class="about__item">
+              <div class="about__item" data-aos="fade-up" data-aos-delay="50">
                 <div class="about__item-img">
-                  <img loading="lazy" src="./images/about/img-1.svg" alt="about-img" />
+                  <img src="./images/about/img-1.svg" alt="about-img" />
                 </div>
                 <p class="about__item-text">100% натуральный продукт</p>
               </div>
-              <div class="about__item">
+              <div class="about__item" data-aos="fade-up" data-aos-delay="150">
                 <div class="about__item-img">
-                  <img loading="lazy" src="./images/about/img-2.svg" alt="about-img" />
+                  <img src="./images/about/img-2.svg" alt="about-img" />
                 </div>
                 <p class="about__item-text">Не содержит ГМО, консервантов и красителей</p>
               </div>
-              <div class="about__item">
+              <div class="about__item" data-aos="fade-up" data-aos-delay="250">
                 <div class="about__item-img">
-                  <img loading="lazy" src="./images/about/img-3.svg" alt="about-img" />
+                  <img src="./images/about/img-3.svg" alt="about-img" />
                 </div>
                 <p class="about__item-text">С 1998 года на рынке</p>
               </div>
-              <div class="about__item">
+              <div class="about__item" data-aos="fade-up" data-aos-delay="350">
                 <div class="about__item-img">
-                  <img loading="lazy" src="./images/about/img-4.svg" alt="about-img" />
+                  <img src="./images/about/img-4.svg" alt="about-img" />
                 </div>
                 <p class="about__item-text">Бережная постеризация сохраняет все полезные вещества</p>
               </div>
-              <div class="about__item">
+              <div class="about__item" data-aos="fade-up" data-aos-delay="450">
                 <div class="about__item-img">
-                  <img loading="lazy" src="./images/about/img-5.svg" alt="about-img" />
+                  <img src="./images/about/img-5.svg" alt="about-img" />
                 </div>
                 <p class="about__item-text">Белее строгие стандарты качества, чем ГОСТ</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="about__bot"></div>
+        <div class="about__bot" data-aos="fade-up" data-aos-offset="500" data-aos-delay="1100"></div>
       </section>
       <!-- About area End -->
 
@@ -160,7 +162,7 @@
             <div class="tabs__catalog">
               <div class="assortment__slider">
                 <div class="assortment__slider-wrapper swiper-wrapper">
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="50">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/1/product-1.webp" alt="product-img" />
@@ -181,7 +183,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="150">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/1/product-2.webp" alt="product-img" />
@@ -202,7 +204,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="250">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/1/product-3.webp" alt="product-img" />
@@ -223,7 +225,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="350">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/1/product-4.webp" alt="product-img" />
@@ -244,7 +246,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="450">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/1/product-5.webp" alt="product-img" />
@@ -265,7 +267,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="550">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/1/product-6.webp" alt="product-img" />
@@ -286,7 +288,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="650">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/1/product-7.webp" alt="product-img" />
@@ -307,7 +309,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="750">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/1/product-8.webp" alt="product-img" />
@@ -328,7 +330,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="850">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/1/product-9.webp" alt="product-img" />
@@ -349,7 +351,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="950">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/1/product-10.webp" alt="product-img" />
@@ -370,7 +372,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="1050">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/1/product-11.webp" alt="product-img" />
@@ -409,7 +411,7 @@
             <div class="tabs__catalog">
               <div class="assortment__slider">
                 <div class="assortment__slider-wrapper swiper-wrapper">
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="50">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/2/product-1.webp" alt="product-img" />
@@ -430,7 +432,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="150">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/2/product-2.webp" alt="product-img" />
@@ -451,7 +453,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="250">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/2/product-2.webp" alt="product-img" />
@@ -472,7 +474,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="350">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/2/product-2.webp" alt="product-img" />
@@ -493,7 +495,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="450">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/2/product-2.webp" alt="product-img" />
@@ -532,7 +534,7 @@
             <div class="tabs__catalog">
               <div class="assortment__slider">
                 <div class="assortment__slider-wrapper swiper-wrapper">
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="50">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/3/product-1.webp" alt="product-img" />
@@ -553,7 +555,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="150">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/3/product-2.webp" alt="product-img" />
@@ -592,7 +594,7 @@
             <div class="tabs__catalog">
               <div class="assortment__slider">
                 <div class="assortment__slider-wrapper swiper-wrapper">
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="50">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/4/product-1.webp" alt="product-img" />
@@ -613,7 +615,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="150">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/4/product-2.webp" alt="product-img" />
@@ -634,7 +636,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="250">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/4/product-3.webp" alt="product-img" />
@@ -673,7 +675,7 @@
             <div class="tabs__catalog">
               <div class="assortment__slider">
                 <div class="assortment__slider-wrapper swiper-wrapper">
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="50">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/5/product-1.webp" alt="product-img" />
@@ -694,7 +696,7 @@
                       <butto class="item__back-buy">Купить</butto>
                     </div>
                   </div>
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="150">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/5/product-2.webp" alt="product-img" />
@@ -733,7 +735,7 @@
             <div class="tabs__catalog">
               <div class="assortment__slider">
                 <div class="assortment__slider-wrapper swiper-wrapper">
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="50">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/6/product-1.webp" alt="product-img" />
@@ -772,7 +774,7 @@
             <div class="tabs__catalog">
               <div class="assortment__slider">
                 <div class="assortment__slider-wrapper swiper-wrapper">
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="50">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/7/product-1.webp" alt="product-img" />
@@ -811,7 +813,7 @@
             <div class="tabs__catalog">
               <div class="assortment__slider">
                 <div class="assortment__slider-wrapper swiper-wrapper">
-                  <div class="assortment__slider-item item swiper-slide">
+                  <div class="assortment__slider-item item swiper-slide" data-aos="fade-up" data-aos-delay="50">
                     <div class="item__front">
                       <div class="item__front-img">
                         <img src="./images/assortment/8/product-1.webp" alt="product-img" />
@@ -881,7 +883,7 @@
                       </p>
                       <div class="r-item__dropdown">
                         <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
+                        <img src="./images/arrow-down.svg" alt="arrow" />
                       </div>
                       <ul class="r-item__tabs">
                         <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
@@ -966,7 +968,7 @@
                       </p>
                       <div class="r-item__dropdown">
                         <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
+                        <img src="./images/arrow-down.svg" alt="arrow" />
                       </div>
                       <ul class="r-item__tabs">
                         <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
@@ -1051,280 +1053,7 @@
                       </p>
                       <div class="r-item__dropdown">
                         <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
-                      </div>
-                      <ul class="r-item__tabs">
-                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
-                        <li class="r-item__tabs-item tab-item">Готовим</li>
-                      </ul>
-
-                      <div class="r-item__tabs-catalog r-item__ingredients">
-                        <div class="r-item__ingredients-wrapper">
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
-                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
-                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
-                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
-                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
-                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
-                              <li class="r-item__ingredients-item">листья лазаньи</li>
-                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
-                              <li class="r-item__ingredients-item">моцарелла</li>
-                              <li class="r-item__ingredients-item">
-                                томаты в собственном соку <br />
-                                «Помидорка»
-                                <span>1 банка</span>
-                              </li>
-                              <li class="r-item__ingredients-item">базилик</li>
-                            </ul>
-                          </div>
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">
-                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
-                              </li>
-                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">
-                                соль, черный перец и мускатный орех
-                                <span>по вкусу</span>
-                              </li>
-                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <span class="r-item__ingredients-show-more"> Развернуть </span>
-                      </div>
-
-                      <div class="r-item__tabs-catalog r-item__cooking">
-                        <p class="r-item__cooking-text">
-                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
-                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
-                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
-                          огонь и тушим на медленном огне около 20 минут.
-                          <br /><br />
-
-                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
-                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
-                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
-                          <br /><br />
-
-                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
-                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
-                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
-                          температуре 175 градусов до румяной корочки. Приятного аппетита!
-                        </p>
-                        <span class="r-item__cooking-show-more"> Развернуть </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="recipe__slider-prev">
-                  <svg>
-                    <use xlink:href="./sprite.svg#slider-prev"></use>
-                  </svg>
-                </div>
-                <div class="recipe__slider-next">
-                  <svg>
-                    <use xlink:href="./sprite.svg#slider-next"></use>
-                  </svg>
-                </div>
-                <div class="recipe__slider-pagination"></div>
-              </div>
-            </div>
-
-            <div class="tabs__catalog">
-              <div class="recipe__slider">
-                <div class="recipe__slider-wrapper swiper-wrapper">
-                  <div class="recipe__slider-item r-item swiper-slide">
-                    <div class="r-item__img">
-                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
-                    </div>
-                    <div class="r-item__content">
-                      <h3 class="r-item__title">Классическая лазанья</h3>
-                      <p class="r-item__subtitle">
-                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
-                        уместно и всегда вкусно.
-                      </p>
-                      <div class="r-item__dropdown">
-                        <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
-                      </div>
-                      <ul class="r-item__tabs">
-                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
-                        <li class="r-item__tabs-item tab-item">Готовим</li>
-                      </ul>
-
-                      <div class="r-item__tabs-catalog r-item__ingredients">
-                        <div class="r-item__ingredients-wrapper">
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
-                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
-                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
-                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
-                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
-                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
-                              <li class="r-item__ingredients-item">листья лазаньи</li>
-                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
-                              <li class="r-item__ingredients-item">моцарелла</li>
-                              <li class="r-item__ingredients-item">
-                                томаты в собственном соку <br />
-                                «Помидорка»
-                                <span>1 банка</span>
-                              </li>
-                              <li class="r-item__ingredients-item">базилик</li>
-                            </ul>
-                          </div>
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">
-                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
-                              </li>
-                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">
-                                соль, черный перец и мускатный орех
-                                <span>по вкусу</span>
-                              </li>
-                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <span class="r-item__ingredients-show-more"> Развернуть </span>
-                      </div>
-
-                      <div class="r-item__tabs-catalog r-item__cooking">
-                        <p class="r-item__cooking-text">
-                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
-                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
-                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
-                          огонь и тушим на медленном огне около 20 минут.
-                          <br /><br />
-
-                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
-                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
-                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
-                          <br /><br />
-
-                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
-                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
-                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
-                          температуре 175 градусов до румяной корочки. Приятного аппетита!
-                        </p>
-                        <span class="r-item__cooking-show-more"> Развернуть </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="recipe__slider-item r-item swiper-slide">
-                    <div class="r-item__img">
-                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
-                    </div>
-                    <div class="r-item__content">
-                      <h3 class="r-item__title">Классическая лазанья</h3>
-                      <p class="r-item__subtitle">
-                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
-                        уместно и всегда вкусно.
-                      </p>
-                      <div class="r-item__dropdown">
-                        <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
-                      </div>
-                      <ul class="r-item__tabs">
-                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
-                        <li class="r-item__tabs-item tab-item">Готовим</li>
-                      </ul>
-
-                      <div class="r-item__tabs-catalog r-item__ingredients">
-                        <div class="r-item__ingredients-wrapper">
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
-                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
-                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
-                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
-                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
-                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
-                              <li class="r-item__ingredients-item">листья лазаньи</li>
-                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
-                              <li class="r-item__ingredients-item">моцарелла</li>
-                              <li class="r-item__ingredients-item">
-                                томаты в собственном соку <br />
-                                «Помидорка»
-                                <span>1 банка</span>
-                              </li>
-                              <li class="r-item__ingredients-item">базилик</li>
-                            </ul>
-                          </div>
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">
-                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
-                              </li>
-                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">
-                                соль, черный перец и мускатный орех
-                                <span>по вкусу</span>
-                              </li>
-                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <span class="r-item__ingredients-show-more"> Развернуть </span>
-                      </div>
-
-                      <div class="r-item__tabs-catalog r-item__cooking">
-                        <p class="r-item__cooking-text">
-                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
-                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
-                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
-                          огонь и тушим на медленном огне около 20 минут.
-                          <br /><br />
-
-                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
-                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
-                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
-                          <br /><br />
-
-                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
-                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
-                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
-                          температуре 175 градусов до румяной корочки. Приятного аппетита!
-                        </p>
-                        <span class="r-item__cooking-show-more"> Развернуть </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="recipe__slider-item r-item swiper-slide">
-                    <div class="r-item__img">
-                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
-                    </div>
-                    <div class="r-item__content">
-                      <h3 class="r-item__title">Классическая лазанья</h3>
-                      <p class="r-item__subtitle">
-                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
-                        уместно и всегда вкусно.
-                      </p>
-                      <div class="r-item__dropdown">
-                        <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
+                        <img src="./images/arrow-down.svg" alt="arrow" />
                       </div>
                       <ul class="r-item__tabs">
                         <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
@@ -1427,7 +1156,7 @@
                       </p>
                       <div class="r-item__dropdown">
                         <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
+                        <img src="./images/arrow-down.svg" alt="arrow" />
                       </div>
                       <ul class="r-item__tabs">
                         <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
@@ -1512,7 +1241,7 @@
                       </p>
                       <div class="r-item__dropdown">
                         <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
+                        <img src="./images/arrow-down.svg" alt="arrow" />
                       </div>
                       <ul class="r-item__tabs">
                         <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
@@ -1597,280 +1326,7 @@
                       </p>
                       <div class="r-item__dropdown">
                         <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
-                      </div>
-                      <ul class="r-item__tabs">
-                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
-                        <li class="r-item__tabs-item tab-item">Готовим</li>
-                      </ul>
-
-                      <div class="r-item__tabs-catalog r-item__ingredients">
-                        <div class="r-item__ingredients-wrapper">
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
-                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
-                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
-                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
-                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
-                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
-                              <li class="r-item__ingredients-item">листья лазаньи</li>
-                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
-                              <li class="r-item__ingredients-item">моцарелла</li>
-                              <li class="r-item__ingredients-item">
-                                томаты в собственном соку <br />
-                                «Помидорка»
-                                <span>1 банка</span>
-                              </li>
-                              <li class="r-item__ingredients-item">базилик</li>
-                            </ul>
-                          </div>
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">
-                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
-                              </li>
-                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">
-                                соль, черный перец и мускатный орех
-                                <span>по вкусу</span>
-                              </li>
-                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <span class="r-item__ingredients-show-more"> Развернуть </span>
-                      </div>
-
-                      <div class="r-item__tabs-catalog r-item__cooking">
-                        <p class="r-item__cooking-text">
-                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
-                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
-                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
-                          огонь и тушим на медленном огне около 20 минут.
-                          <br /><br />
-
-                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
-                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
-                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
-                          <br /><br />
-
-                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
-                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
-                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
-                          температуре 175 градусов до румяной корочки. Приятного аппетита!
-                        </p>
-                        <span class="r-item__cooking-show-more"> Развернуть </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="recipe__slider-prev">
-                  <svg>
-                    <use xlink:href="./sprite.svg#slider-prev"></use>
-                  </svg>
-                </div>
-                <div class="recipe__slider-next">
-                  <svg>
-                    <use xlink:href="./sprite.svg#slider-next"></use>
-                  </svg>
-                </div>
-                <div class="recipe__slider-pagination"></div>
-              </div>
-            </div>
-
-            <div class="tabs__catalog">
-              <div class="recipe__slider">
-                <div class="recipe__slider-wrapper swiper-wrapper">
-                  <div class="recipe__slider-item r-item swiper-slide">
-                    <div class="r-item__img">
-                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
-                    </div>
-                    <div class="r-item__content">
-                      <h3 class="r-item__title">Классическая лазанья</h3>
-                      <p class="r-item__subtitle">
-                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
-                        уместно и всегда вкусно.
-                      </p>
-                      <div class="r-item__dropdown">
-                        <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
-                      </div>
-                      <ul class="r-item__tabs">
-                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
-                        <li class="r-item__tabs-item tab-item">Готовим</li>
-                      </ul>
-
-                      <div class="r-item__tabs-catalog r-item__ingredients">
-                        <div class="r-item__ingredients-wrapper">
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
-                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
-                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
-                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
-                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
-                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
-                              <li class="r-item__ingredients-item">листья лазаньи</li>
-                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
-                              <li class="r-item__ingredients-item">моцарелла</li>
-                              <li class="r-item__ingredients-item">
-                                томаты в собственном соку <br />
-                                «Помидорка»
-                                <span>1 банка</span>
-                              </li>
-                              <li class="r-item__ingredients-item">базилик</li>
-                            </ul>
-                          </div>
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">
-                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
-                              </li>
-                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">
-                                соль, черный перец и мускатный орех
-                                <span>по вкусу</span>
-                              </li>
-                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <span class="r-item__ingredients-show-more"> Развернуть </span>
-                      </div>
-
-                      <div class="r-item__tabs-catalog r-item__cooking">
-                        <p class="r-item__cooking-text">
-                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
-                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
-                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
-                          огонь и тушим на медленном огне около 20 минут.
-                          <br /><br />
-
-                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
-                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
-                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
-                          <br /><br />
-
-                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
-                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
-                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
-                          температуре 175 градусов до румяной корочки. Приятного аппетита!
-                        </p>
-                        <span class="r-item__cooking-show-more"> Развернуть </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="recipe__slider-item r-item swiper-slide">
-                    <div class="r-item__img">
-                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
-                    </div>
-                    <div class="r-item__content">
-                      <h3 class="r-item__title">Классическая лазанья</h3>
-                      <p class="r-item__subtitle">
-                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
-                        уместно и всегда вкусно.
-                      </p>
-                      <div class="r-item__dropdown">
-                        <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
-                      </div>
-                      <ul class="r-item__tabs">
-                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
-                        <li class="r-item__tabs-item tab-item">Готовим</li>
-                      </ul>
-
-                      <div class="r-item__tabs-catalog r-item__ingredients">
-                        <div class="r-item__ingredients-wrapper">
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
-                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
-                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
-                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
-                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
-                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
-                              <li class="r-item__ingredients-item">листья лазаньи</li>
-                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
-                              <li class="r-item__ingredients-item">моцарелла</li>
-                              <li class="r-item__ingredients-item">
-                                томаты в собственном соку <br />
-                                «Помидорка»
-                                <span>1 банка</span>
-                              </li>
-                              <li class="r-item__ingredients-item">базилик</li>
-                            </ul>
-                          </div>
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">
-                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
-                              </li>
-                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">
-                                соль, черный перец и мускатный орех
-                                <span>по вкусу</span>
-                              </li>
-                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <span class="r-item__ingredients-show-more"> Развернуть </span>
-                      </div>
-
-                      <div class="r-item__tabs-catalog r-item__cooking">
-                        <p class="r-item__cooking-text">
-                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
-                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
-                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
-                          огонь и тушим на медленном огне около 20 минут.
-                          <br /><br />
-
-                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
-                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
-                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
-                          <br /><br />
-
-                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
-                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
-                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
-                          температуре 175 градусов до румяной корочки. Приятного аппетита!
-                        </p>
-                        <span class="r-item__cooking-show-more"> Развернуть </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="recipe__slider-item r-item swiper-slide">
-                    <div class="r-item__img">
-                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
-                    </div>
-                    <div class="r-item__content">
-                      <h3 class="r-item__title">Классическая лазанья</h3>
-                      <p class="r-item__subtitle">
-                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
-                        уместно и всегда вкусно.
-                      </p>
-                      <div class="r-item__dropdown">
-                        <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
+                        <img src="./images/arrow-down.svg" alt="arrow" />
                       </div>
                       <ul class="r-item__tabs">
                         <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
@@ -1973,7 +1429,7 @@
                       </p>
                       <div class="r-item__dropdown">
                         <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
+                        <img src="./images/arrow-down.svg" alt="arrow" />
                       </div>
                       <ul class="r-item__tabs">
                         <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
@@ -2058,7 +1514,7 @@
                       </p>
                       <div class="r-item__dropdown">
                         <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
+                        <img src="./images/arrow-down.svg" alt="arrow" />
                       </div>
                       <ul class="r-item__tabs">
                         <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
@@ -2143,280 +1599,7 @@
                       </p>
                       <div class="r-item__dropdown">
                         <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
-                      </div>
-                      <ul class="r-item__tabs">
-                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
-                        <li class="r-item__tabs-item tab-item">Готовим</li>
-                      </ul>
-
-                      <div class="r-item__tabs-catalog r-item__ingredients">
-                        <div class="r-item__ingredients-wrapper">
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
-                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
-                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
-                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
-                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
-                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
-                              <li class="r-item__ingredients-item">листья лазаньи</li>
-                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
-                              <li class="r-item__ingredients-item">моцарелла</li>
-                              <li class="r-item__ingredients-item">
-                                томаты в собственном соку <br />
-                                «Помидорка»
-                                <span>1 банка</span>
-                              </li>
-                              <li class="r-item__ingredients-item">базилик</li>
-                            </ul>
-                          </div>
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">
-                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
-                              </li>
-                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">
-                                соль, черный перец и мускатный орех
-                                <span>по вкусу</span>
-                              </li>
-                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <span class="r-item__ingredients-show-more"> Развернуть </span>
-                      </div>
-
-                      <div class="r-item__tabs-catalog r-item__cooking">
-                        <p class="r-item__cooking-text">
-                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
-                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
-                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
-                          огонь и тушим на медленном огне около 20 минут.
-                          <br /><br />
-
-                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
-                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
-                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
-                          <br /><br />
-
-                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
-                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
-                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
-                          температуре 175 градусов до румяной корочки. Приятного аппетита!
-                        </p>
-                        <span class="r-item__cooking-show-more"> Развернуть </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="recipe__slider-prev">
-                  <svg>
-                    <use xlink:href="./sprite.svg#slider-prev"></use>
-                  </svg>
-                </div>
-                <div class="recipe__slider-next">
-                  <svg>
-                    <use xlink:href="./sprite.svg#slider-next"></use>
-                  </svg>
-                </div>
-                <div class="recipe__slider-pagination"></div>
-              </div>
-            </div>
-
-            <div class="tabs__catalog">
-              <div class="recipe__slider">
-                <div class="recipe__slider-wrapper swiper-wrapper">
-                  <div class="recipe__slider-item r-item swiper-slide">
-                    <div class="r-item__img">
-                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
-                    </div>
-                    <div class="r-item__content">
-                      <h3 class="r-item__title">Классическая лазанья</h3>
-                      <p class="r-item__subtitle">
-                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
-                        уместно и всегда вкусно.
-                      </p>
-                      <div class="r-item__dropdown">
-                        <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
-                      </div>
-                      <ul class="r-item__tabs">
-                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
-                        <li class="r-item__tabs-item tab-item">Готовим</li>
-                      </ul>
-
-                      <div class="r-item__tabs-catalog r-item__ingredients">
-                        <div class="r-item__ingredients-wrapper">
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
-                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
-                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
-                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
-                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
-                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
-                              <li class="r-item__ingredients-item">листья лазаньи</li>
-                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
-                              <li class="r-item__ingredients-item">моцарелла</li>
-                              <li class="r-item__ingredients-item">
-                                томаты в собственном соку <br />
-                                «Помидорка»
-                                <span>1 банка</span>
-                              </li>
-                              <li class="r-item__ingredients-item">базилик</li>
-                            </ul>
-                          </div>
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">
-                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
-                              </li>
-                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">
-                                соль, черный перец и мускатный орех
-                                <span>по вкусу</span>
-                              </li>
-                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <span class="r-item__ingredients-show-more"> Развернуть </span>
-                      </div>
-
-                      <div class="r-item__tabs-catalog r-item__cooking">
-                        <p class="r-item__cooking-text">
-                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
-                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
-                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
-                          огонь и тушим на медленном огне около 20 минут.
-                          <br /><br />
-
-                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
-                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
-                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
-                          <br /><br />
-
-                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
-                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
-                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
-                          температуре 175 градусов до румяной корочки. Приятного аппетита!
-                        </p>
-                        <span class="r-item__cooking-show-more"> Развернуть </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="recipe__slider-item r-item swiper-slide">
-                    <div class="r-item__img">
-                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
-                    </div>
-                    <div class="r-item__content">
-                      <h3 class="r-item__title">Классическая лазанья</h3>
-                      <p class="r-item__subtitle">
-                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
-                        уместно и всегда вкусно.
-                      </p>
-                      <div class="r-item__dropdown">
-                        <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
-                      </div>
-                      <ul class="r-item__tabs">
-                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
-                        <li class="r-item__tabs-item tab-item">Готовим</li>
-                      </ul>
-
-                      <div class="r-item__tabs-catalog r-item__ingredients">
-                        <div class="r-item__ingredients-wrapper">
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
-                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
-                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
-                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
-                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
-                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
-                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
-                              <li class="r-item__ingredients-item">листья лазаньи</li>
-                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
-                              <li class="r-item__ingredients-item">моцарелла</li>
-                              <li class="r-item__ingredients-item">
-                                томаты в собственном соку <br />
-                                «Помидорка»
-                                <span>1 банка</span>
-                              </li>
-                              <li class="r-item__ingredients-item">базилик</li>
-                            </ul>
-                          </div>
-                          <div class="r-item__ingredients-inner">
-                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
-                            <ul class="r-item__ingredients-list">
-                              <li class="r-item__ingredients-item">
-                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
-                              </li>
-                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
-                              <li class="r-item__ingredients-item">
-                                соль, черный перец и мускатный орех
-                                <span>по вкусу</span>
-                              </li>
-                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <span class="r-item__ingredients-show-more"> Развернуть </span>
-                      </div>
-
-                      <div class="r-item__tabs-catalog r-item__cooking">
-                        <p class="r-item__cooking-text">
-                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
-                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
-                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
-                          огонь и тушим на медленном огне около 20 минут.
-                          <br /><br />
-
-                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
-                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
-                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
-                          <br /><br />
-
-                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
-                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
-                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
-                          температуре 175 градусов до румяной корочки. Приятного аппетита!
-                        </p>
-                        <span class="r-item__cooking-show-more"> Развернуть </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="recipe__slider-item r-item swiper-slide">
-                    <div class="r-item__img">
-                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
-                    </div>
-                    <div class="r-item__content">
-                      <h3 class="r-item__title">Классическая лазанья</h3>
-                      <p class="r-item__subtitle">
-                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
-                        уместно и всегда вкусно.
-                      </p>
-                      <div class="r-item__dropdown">
-                        <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
+                        <img src="./images/arrow-down.svg" alt="arrow" />
                       </div>
                       <ul class="r-item__tabs">
                         <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
@@ -2519,7 +1702,7 @@
                       </p>
                       <div class="r-item__dropdown">
                         <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
+                        <img src="./images/arrow-down.svg" alt="arrow" />
                       </div>
                       <ul class="r-item__tabs">
                         <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
@@ -2604,7 +1787,7 @@
                       </p>
                       <div class="r-item__dropdown">
                         <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
+                        <img src="./images/arrow-down.svg" alt="arrow" />
                       </div>
                       <ul class="r-item__tabs">
                         <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
@@ -2689,7 +1872,826 @@
                       </p>
                       <div class="r-item__dropdown">
                         <div class="r-item__dropdown-text">Ингредиенты</div>
-                        <img loading="lazy" src="./images/arrow-down.svg" alt="arrow" />
+                        <img src="./images/arrow-down.svg" alt="arrow" />
+                      </div>
+                      <ul class="r-item__tabs">
+                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
+                        <li class="r-item__tabs-item tab-item">Готовим</li>
+                      </ul>
+
+                      <div class="r-item__tabs-catalog r-item__ingredients">
+                        <div class="r-item__ingredients-wrapper">
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
+                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
+                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
+                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
+                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
+                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
+                              <li class="r-item__ingredients-item">листья лазаньи</li>
+                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
+                              <li class="r-item__ingredients-item">моцарелла</li>
+                              <li class="r-item__ingredients-item">
+                                томаты в собственном соку <br />
+                                «Помидорка»
+                                <span>1 банка</span>
+                              </li>
+                              <li class="r-item__ingredients-item">базилик</li>
+                            </ul>
+                          </div>
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">
+                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
+                              </li>
+                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">
+                                соль, черный перец и мускатный орех
+                                <span>по вкусу</span>
+                              </li>
+                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="r-item__ingredients-show-more"> Развернуть </span>
+                      </div>
+
+                      <div class="r-item__tabs-catalog r-item__cooking">
+                        <p class="r-item__cooking-text">
+                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
+                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
+                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
+                          огонь и тушим на медленном огне около 20 минут.
+                          <br /><br />
+
+                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
+                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
+                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
+                          <br /><br />
+
+                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
+                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
+                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
+                          температуре 175 градусов до румяной корочки. Приятного аппетита!
+                        </p>
+                        <span class="r-item__cooking-show-more"> Развернуть </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe__slider-prev">
+                  <svg>
+                    <use xlink:href="./sprite.svg#slider-prev"></use>
+                  </svg>
+                </div>
+                <div class="recipe__slider-next">
+                  <svg>
+                    <use xlink:href="./sprite.svg#slider-next"></use>
+                  </svg>
+                </div>
+                <div class="recipe__slider-pagination"></div>
+              </div>
+            </div>
+
+            <div class="tabs__catalog">
+              <div class="recipe__slider">
+                <div class="recipe__slider-wrapper swiper-wrapper">
+                  <div class="recipe__slider-item r-item swiper-slide">
+                    <div class="r-item__img">
+                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
+                    </div>
+                    <div class="r-item__content">
+                      <h3 class="r-item__title">Классическая лазанья</h3>
+                      <p class="r-item__subtitle">
+                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
+                        уместно и всегда вкусно.
+                      </p>
+                      <div class="r-item__dropdown">
+                        <div class="r-item__dropdown-text">Ингредиенты</div>
+                        <img src="./images/arrow-down.svg" alt="arrow" />
+                      </div>
+                      <ul class="r-item__tabs">
+                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
+                        <li class="r-item__tabs-item tab-item">Готовим</li>
+                      </ul>
+
+                      <div class="r-item__tabs-catalog r-item__ingredients">
+                        <div class="r-item__ingredients-wrapper">
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
+                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
+                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
+                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
+                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
+                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
+                              <li class="r-item__ingredients-item">листья лазаньи</li>
+                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
+                              <li class="r-item__ingredients-item">моцарелла</li>
+                              <li class="r-item__ingredients-item">
+                                томаты в собственном соку <br />
+                                «Помидорка»
+                                <span>1 банка</span>
+                              </li>
+                              <li class="r-item__ingredients-item">базилик</li>
+                            </ul>
+                          </div>
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">
+                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
+                              </li>
+                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">
+                                соль, черный перец и мускатный орех
+                                <span>по вкусу</span>
+                              </li>
+                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="r-item__ingredients-show-more"> Развернуть </span>
+                      </div>
+
+                      <div class="r-item__tabs-catalog r-item__cooking">
+                        <p class="r-item__cooking-text">
+                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
+                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
+                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
+                          огонь и тушим на медленном огне около 20 минут.
+                          <br /><br />
+
+                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
+                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
+                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
+                          <br /><br />
+
+                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
+                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
+                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
+                          температуре 175 градусов до румяной корочки. Приятного аппетита!
+                        </p>
+                        <span class="r-item__cooking-show-more"> Развернуть </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recipe__slider-item r-item swiper-slide">
+                    <div class="r-item__img">
+                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
+                    </div>
+                    <div class="r-item__content">
+                      <h3 class="r-item__title">Классическая лазанья</h3>
+                      <p class="r-item__subtitle">
+                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
+                        уместно и всегда вкусно.
+                      </p>
+                      <div class="r-item__dropdown">
+                        <div class="r-item__dropdown-text">Ингредиенты</div>
+                        <img src="./images/arrow-down.svg" alt="arrow" />
+                      </div>
+                      <ul class="r-item__tabs">
+                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
+                        <li class="r-item__tabs-item tab-item">Готовим</li>
+                      </ul>
+
+                      <div class="r-item__tabs-catalog r-item__ingredients">
+                        <div class="r-item__ingredients-wrapper">
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
+                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
+                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
+                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
+                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
+                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
+                              <li class="r-item__ingredients-item">листья лазаньи</li>
+                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
+                              <li class="r-item__ingredients-item">моцарелла</li>
+                              <li class="r-item__ingredients-item">
+                                томаты в собственном соку <br />
+                                «Помидорка»
+                                <span>1 банка</span>
+                              </li>
+                              <li class="r-item__ingredients-item">базилик</li>
+                            </ul>
+                          </div>
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">
+                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
+                              </li>
+                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">
+                                соль, черный перец и мускатный орех
+                                <span>по вкусу</span>
+                              </li>
+                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="r-item__ingredients-show-more"> Развернуть </span>
+                      </div>
+
+                      <div class="r-item__tabs-catalog r-item__cooking">
+                        <p class="r-item__cooking-text">
+                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
+                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
+                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
+                          огонь и тушим на медленном огне около 20 минут.
+                          <br /><br />
+
+                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
+                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
+                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
+                          <br /><br />
+
+                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
+                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
+                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
+                          температуре 175 градусов до румяной корочки. Приятного аппетита!
+                        </p>
+                        <span class="r-item__cooking-show-more"> Развернуть </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recipe__slider-item r-item swiper-slide">
+                    <div class="r-item__img">
+                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
+                    </div>
+                    <div class="r-item__content">
+                      <h3 class="r-item__title">Классическая лазанья</h3>
+                      <p class="r-item__subtitle">
+                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
+                        уместно и всегда вкусно.
+                      </p>
+                      <div class="r-item__dropdown">
+                        <div class="r-item__dropdown-text">Ингредиенты</div>
+                        <img src="./images/arrow-down.svg" alt="arrow" />
+                      </div>
+                      <ul class="r-item__tabs">
+                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
+                        <li class="r-item__tabs-item tab-item">Готовим</li>
+                      </ul>
+
+                      <div class="r-item__tabs-catalog r-item__ingredients">
+                        <div class="r-item__ingredients-wrapper">
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
+                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
+                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
+                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
+                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
+                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
+                              <li class="r-item__ingredients-item">листья лазаньи</li>
+                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
+                              <li class="r-item__ingredients-item">моцарелла</li>
+                              <li class="r-item__ingredients-item">
+                                томаты в собственном соку <br />
+                                «Помидорка»
+                                <span>1 банка</span>
+                              </li>
+                              <li class="r-item__ingredients-item">базилик</li>
+                            </ul>
+                          </div>
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">
+                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
+                              </li>
+                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">
+                                соль, черный перец и мускатный орех
+                                <span>по вкусу</span>
+                              </li>
+                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="r-item__ingredients-show-more"> Развернуть </span>
+                      </div>
+
+                      <div class="r-item__tabs-catalog r-item__cooking">
+                        <p class="r-item__cooking-text">
+                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
+                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
+                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
+                          огонь и тушим на медленном огне около 20 минут.
+                          <br /><br />
+
+                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
+                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
+                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
+                          <br /><br />
+
+                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
+                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
+                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
+                          температуре 175 градусов до румяной корочки. Приятного аппетита!
+                        </p>
+                        <span class="r-item__cooking-show-more"> Развернуть </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe__slider-prev">
+                  <svg>
+                    <use xlink:href="./sprite.svg#slider-prev"></use>
+                  </svg>
+                </div>
+                <div class="recipe__slider-next">
+                  <svg>
+                    <use xlink:href="./sprite.svg#slider-next"></use>
+                  </svg>
+                </div>
+                <div class="recipe__slider-pagination"></div>
+              </div>
+            </div>
+
+            <div class="tabs__catalog">
+              <div class="recipe__slider">
+                <div class="recipe__slider-wrapper swiper-wrapper">
+                  <div class="recipe__slider-item r-item swiper-slide">
+                    <div class="r-item__img">
+                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
+                    </div>
+                    <div class="r-item__content">
+                      <h3 class="r-item__title">Классическая лазанья</h3>
+                      <p class="r-item__subtitle">
+                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
+                        уместно и всегда вкусно.
+                      </p>
+                      <div class="r-item__dropdown">
+                        <div class="r-item__dropdown-text">Ингредиенты</div>
+                        <img src="./images/arrow-down.svg" alt="arrow" />
+                      </div>
+                      <ul class="r-item__tabs">
+                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
+                        <li class="r-item__tabs-item tab-item">Готовим</li>
+                      </ul>
+
+                      <div class="r-item__tabs-catalog r-item__ingredients">
+                        <div class="r-item__ingredients-wrapper">
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
+                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
+                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
+                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
+                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
+                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
+                              <li class="r-item__ingredients-item">листья лазаньи</li>
+                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
+                              <li class="r-item__ingredients-item">моцарелла</li>
+                              <li class="r-item__ingredients-item">
+                                томаты в собственном соку <br />
+                                «Помидорка»
+                                <span>1 банка</span>
+                              </li>
+                              <li class="r-item__ingredients-item">базилик</li>
+                            </ul>
+                          </div>
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">
+                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
+                              </li>
+                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">
+                                соль, черный перец и мускатный орех
+                                <span>по вкусу</span>
+                              </li>
+                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="r-item__ingredients-show-more"> Развернуть </span>
+                      </div>
+
+                      <div class="r-item__tabs-catalog r-item__cooking">
+                        <p class="r-item__cooking-text">
+                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
+                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
+                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
+                          огонь и тушим на медленном огне около 20 минут.
+                          <br /><br />
+
+                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
+                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
+                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
+                          <br /><br />
+
+                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
+                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
+                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
+                          температуре 175 градусов до румяной корочки. Приятного аппетита!
+                        </p>
+                        <span class="r-item__cooking-show-more"> Развернуть </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recipe__slider-item r-item swiper-slide">
+                    <div class="r-item__img">
+                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
+                    </div>
+                    <div class="r-item__content">
+                      <h3 class="r-item__title">Классическая лазанья</h3>
+                      <p class="r-item__subtitle">
+                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
+                        уместно и всегда вкусно.
+                      </p>
+                      <div class="r-item__dropdown">
+                        <div class="r-item__dropdown-text">Ингредиенты</div>
+                        <img src="./images/arrow-down.svg" alt="arrow" />
+                      </div>
+                      <ul class="r-item__tabs">
+                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
+                        <li class="r-item__tabs-item tab-item">Готовим</li>
+                      </ul>
+
+                      <div class="r-item__tabs-catalog r-item__ingredients">
+                        <div class="r-item__ingredients-wrapper">
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
+                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
+                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
+                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
+                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
+                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
+                              <li class="r-item__ingredients-item">листья лазаньи</li>
+                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
+                              <li class="r-item__ingredients-item">моцарелла</li>
+                              <li class="r-item__ingredients-item">
+                                томаты в собственном соку <br />
+                                «Помидорка»
+                                <span>1 банка</span>
+                              </li>
+                              <li class="r-item__ingredients-item">базилик</li>
+                            </ul>
+                          </div>
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">
+                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
+                              </li>
+                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">
+                                соль, черный перец и мускатный орех
+                                <span>по вкусу</span>
+                              </li>
+                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="r-item__ingredients-show-more"> Развернуть </span>
+                      </div>
+
+                      <div class="r-item__tabs-catalog r-item__cooking">
+                        <p class="r-item__cooking-text">
+                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
+                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
+                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
+                          огонь и тушим на медленном огне около 20 минут.
+                          <br /><br />
+
+                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
+                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
+                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
+                          <br /><br />
+
+                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
+                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
+                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
+                          температуре 175 градусов до румяной корочки. Приятного аппетита!
+                        </p>
+                        <span class="r-item__cooking-show-more"> Развернуть </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recipe__slider-item r-item swiper-slide">
+                    <div class="r-item__img">
+                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
+                    </div>
+                    <div class="r-item__content">
+                      <h3 class="r-item__title">Классическая лазанья</h3>
+                      <p class="r-item__subtitle">
+                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
+                        уместно и всегда вкусно.
+                      </p>
+                      <div class="r-item__dropdown">
+                        <div class="r-item__dropdown-text">Ингредиенты</div>
+                        <img src="./images/arrow-down.svg" alt="arrow" />
+                      </div>
+                      <ul class="r-item__tabs">
+                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
+                        <li class="r-item__tabs-item tab-item">Готовим</li>
+                      </ul>
+
+                      <div class="r-item__tabs-catalog r-item__ingredients">
+                        <div class="r-item__ingredients-wrapper">
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
+                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
+                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
+                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
+                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
+                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
+                              <li class="r-item__ingredients-item">листья лазаньи</li>
+                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
+                              <li class="r-item__ingredients-item">моцарелла</li>
+                              <li class="r-item__ingredients-item">
+                                томаты в собственном соку <br />
+                                «Помидорка»
+                                <span>1 банка</span>
+                              </li>
+                              <li class="r-item__ingredients-item">базилик</li>
+                            </ul>
+                          </div>
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">
+                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
+                              </li>
+                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">
+                                соль, черный перец и мускатный орех
+                                <span>по вкусу</span>
+                              </li>
+                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="r-item__ingredients-show-more"> Развернуть </span>
+                      </div>
+
+                      <div class="r-item__tabs-catalog r-item__cooking">
+                        <p class="r-item__cooking-text">
+                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
+                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
+                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
+                          огонь и тушим на медленном огне около 20 минут.
+                          <br /><br />
+
+                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
+                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
+                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
+                          <br /><br />
+
+                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
+                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
+                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
+                          температуре 175 градусов до румяной корочки. Приятного аппетита!
+                        </p>
+                        <span class="r-item__cooking-show-more"> Развернуть </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe__slider-prev">
+                  <svg>
+                    <use xlink:href="./sprite.svg#slider-prev"></use>
+                  </svg>
+                </div>
+                <div class="recipe__slider-next">
+                  <svg>
+                    <use xlink:href="./sprite.svg#slider-next"></use>
+                  </svg>
+                </div>
+                <div class="recipe__slider-pagination"></div>
+              </div>
+            </div>
+
+            <div class="tabs__catalog">
+              <div class="recipe__slider">
+                <div class="recipe__slider-wrapper swiper-wrapper">
+                  <div class="recipe__slider-item r-item swiper-slide">
+                    <div class="r-item__img">
+                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
+                    </div>
+                    <div class="r-item__content">
+                      <h3 class="r-item__title">Классическая лазанья</h3>
+                      <p class="r-item__subtitle">
+                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
+                        уместно и всегда вкусно.
+                      </p>
+                      <div class="r-item__dropdown">
+                        <div class="r-item__dropdown-text">Ингредиенты</div>
+                        <img src="./images/arrow-down.svg" alt="arrow" />
+                      </div>
+                      <ul class="r-item__tabs">
+                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
+                        <li class="r-item__tabs-item tab-item">Готовим</li>
+                      </ul>
+
+                      <div class="r-item__tabs-catalog r-item__ingredients">
+                        <div class="r-item__ingredients-wrapper">
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
+                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
+                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
+                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
+                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
+                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
+                              <li class="r-item__ingredients-item">листья лазаньи</li>
+                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
+                              <li class="r-item__ingredients-item">моцарелла</li>
+                              <li class="r-item__ingredients-item">
+                                томаты в собственном соку <br />
+                                «Помидорка»
+                                <span>1 банка</span>
+                              </li>
+                              <li class="r-item__ingredients-item">базилик</li>
+                            </ul>
+                          </div>
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">
+                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
+                              </li>
+                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">
+                                соль, черный перец и мускатный орех
+                                <span>по вкусу</span>
+                              </li>
+                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="r-item__ingredients-show-more"> Развернуть </span>
+                      </div>
+
+                      <div class="r-item__tabs-catalog r-item__cooking">
+                        <p class="r-item__cooking-text">
+                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
+                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
+                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
+                          огонь и тушим на медленном огне около 20 минут.
+                          <br /><br />
+
+                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
+                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
+                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
+                          <br /><br />
+
+                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
+                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
+                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
+                          температуре 175 градусов до румяной корочки. Приятного аппетита!
+                        </p>
+                        <span class="r-item__cooking-show-more"> Развернуть </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recipe__slider-item r-item swiper-slide">
+                    <div class="r-item__img">
+                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
+                    </div>
+                    <div class="r-item__content">
+                      <h3 class="r-item__title">Классическая лазанья</h3>
+                      <p class="r-item__subtitle">
+                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
+                        уместно и всегда вкусно.
+                      </p>
+                      <div class="r-item__dropdown">
+                        <div class="r-item__dropdown-text">Ингредиенты</div>
+                        <img src="./images/arrow-down.svg" alt="arrow" />
+                      </div>
+                      <ul class="r-item__tabs">
+                        <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
+                        <li class="r-item__tabs-item tab-item">Готовим</li>
+                      </ul>
+
+                      <div class="r-item__tabs-catalog r-item__ingredients">
+                        <div class="r-item__ingredients-wrapper">
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для лазаньи:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">фарш говяжий <span>300 гр</span></li>
+                              <li class="r-item__ingredients-item">томатная паста «Помидорка» <span>1 ст.л</span></li>
+                              <li class="r-item__ingredients-item">лук <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">орегано <span>1 ч.л</span></li>
+                              <li class="r-item__ingredients-item">морковь <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">перец <span>0,5 ч.л</span></li>
+                              <li class="r-item__ingredients-item">стебель сельдерея (по желанию) <span>1 шт</span></li>
+                              <li class="r-item__ingredients-item">паприка и соль <span>по вкусу</span></li>
+                              <li class="r-item__ingredients-item">Чеснок <span>2 зубчика</span></li>
+                              <li class="r-item__ingredients-item">листья лазаньи</li>
+                              <li class="r-item__ingredients-item">вода <span>200 мл</span></li>
+                              <li class="r-item__ingredients-item">моцарелла</li>
+                              <li class="r-item__ingredients-item">
+                                томаты в собственном соку <br />
+                                «Помидорка»
+                                <span>1 банка</span>
+                              </li>
+                              <li class="r-item__ingredients-item">базилик</li>
+                            </ul>
+                          </div>
+                          <div class="r-item__ingredients-inner">
+                            <h4 class="r-item__ingredients-title">Для соуса “Бешамель”:</h4>
+                            <ul class="r-item__ingredients-list">
+                              <li class="r-item__ingredients-item">
+                                <p class="r-item__ingredients-text">сливочное масло <span>50 гр</span></p>
+                              </li>
+                              <li class="r-item__ingredients-item">пармезан <span>1,5 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">мука <span>3 ст.л.</span></li>
+                              <li class="r-item__ingredients-item">
+                                соль, черный перец и мускатный орех
+                                <span>по вкусу</span>
+                              </li>
+                              <li class="r-item__ingredients-item">молоко <span>500 мл</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="r-item__ingredients-show-more"> Развернуть </span>
+                      </div>
+
+                      <div class="r-item__tabs-catalog r-item__cooking">
+                        <p class="r-item__cooking-text">
+                          1. Мелко нарезаем морковь, сельдерей, лук и чеснок. Обжариваем овощи 1 минуту. Добавляем фарш
+                          и хорошо подрумяниваем. Добавляем томатную пасту, слегка обжариваем и затем отправляем в
+                          сковороду томаты в собственном соку, воду, соль и специи. Все доводим до кипения. Убавляем
+                          огонь и тушим на медленном огне около 20 минут.
+                          <br /><br />
+
+                          2. Для бешамеля растапливаем сливочное масло, добавляем муку, обжариваем до появления мучного
+                          запаха. Добавляем холодное молоко и постоянно помешиваем, чтобы оно приобрело густую
+                          консистенцию. Теперь добавляем пармезан, соль и специи, быстро перемешиваем и снимаем с огня.
+                          <br /><br />
+
+                          3. Соус из говяжьего фарша выкладываем на дно формы, далее слой листов лазаньи, затем соус из
+                          бешамеля. Повторяем слои. Последний слой — лист лазаньи, сверху смазываем соусом бешамель.
+                          Посыпаем лазанью тертым сыром и оставляем на 30 минут перед выпечкой. Запекаем в духовке при
+                          температуре 175 градусов до румяной корочки. Приятного аппетита!
+                        </p>
+                        <span class="r-item__cooking-show-more"> Развернуть </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recipe__slider-item r-item swiper-slide">
+                    <div class="r-item__img">
+                      <img src="./images/recipe/1/recipe-1.webp" alt="recipe-img" />
+                    </div>
+                    <div class="r-item__content">
+                      <h3 class="r-item__title">Классическая лазанья</h3>
+                      <p class="r-item__subtitle">
+                        Непревзойденная классика! Итальянское блюдо, но для нас уже такое родное. Всегда в тему, всегда
+                        уместно и всегда вкусно.
+                      </p>
+                      <div class="r-item__dropdown">
+                        <div class="r-item__dropdown-text">Ингредиенты</div>
+                        <img src="./images/arrow-down.svg" alt="arrow" />
                       </div>
                       <ul class="r-item__tabs">
                         <li class="r-item__tabs-item r-item__tabs-item--active tab-item">Ингредиенты</li>
@@ -2792,36 +2794,36 @@
             </ul>
             <div class="tabs__catalog buy__items buy__items-marketplace">
               <a href="#" class="buy__item">
-                <img loading="lazy" src="./images/buy/vprok.svg" alt="buy-item" />
+                <img src="./images/buy/vprok.svg" alt="buy-item" />
               </a>
               <a href="#" class="buy__item">
-                <img loading="lazy" src="./images/buy/ozon.webp" alt="buy-item" />
+                <img src="./images/buy/ozon.webp" alt="buy-item" />
               </a>
               <a href="#" class="buy__item">
-                <img loading="lazy" src="./images/buy/wb.svg" alt="buy-item" />
+                <img src="./images/buy/wb.svg" alt="buy-item" />
               </a>
               <a href="#" class="buy__item">
-                <img loading="lazy" src="./images/buy/sber.webp" alt="buy-item" />
+                <img src="./images/buy/sber.webp" alt="buy-item" />
               </a>
               <a href="#" class="buy__item">
-                <img loading="lazy" src="./images/buy/yandex.svg" alt="buy-item" />
+                <img src="./images/buy/yandex.svg" alt="buy-item" />
               </a>
             </div>
             <div class="tabs__catalog buy__items buy__items-online">
               <a href="#" class="buy__item">
-                <img loading="lazy" src="./images/buy/vprok.svg" alt="buy-item" />
+                <img src="./images/buy/vprok.svg" alt="buy-item" />
               </a>
               <a href="#" class="buy__item">
-                <img loading="lazy" src="./images/buy/ozon.webp" alt="buy-item" />
+                <img src="./images/buy/ozon.webp" alt="buy-item" />
               </a>
               <a href="#" class="buy__item">
-                <img loading="lazy" src="./images/buy/wb.svg" alt="buy-item" />
+                <img src="./images/buy/wb.svg" alt="buy-item" />
               </a>
               <a href="#" class="buy__item">
-                <img loading="lazy" src="./images/buy/sber.webp" alt="buy-item" />
+                <img src="./images/buy/sber.webp" alt="buy-item" />
               </a>
               <a href="#" class="buy__item">
-                <img loading="lazy" src="./images/buy/yandex.svg" alt="buy-item" />
+                <img src="./images/buy/yandex.svg" alt="buy-item" />
               </a>
             </div>
             <button class="buy__more">Показать еще</button>
@@ -2859,67 +2861,67 @@
             <div class="event__items">
               <div class="event__item">
                 <div class="event__item-img">
-                  <img loading="lazy" src="./images/event/img-1.webp" alt="event-img" />
+                  <img src="./images/event/img-1.webp" alt="event-img" />
                 </div>
                 <p class="event__item-date">23.06.23</p>
                 <p class="event__item-title">«Помидорка» выпустила линейку томатных соусов</p>
                 <div class="event__item-more">
-                  <span><img loading="lazy" src="./images/event/plus.svg" alt="plus" /></span>
+                  <span><img src="./images/event/plus.svg" alt="plus" /></span>
                   <p>Подробнее</p>
                 </div>
               </div>
               <div class="event__item">
                 <div class="event__item-img">
-                  <img loading="lazy" src="./images/event/img-2.webp" alt="event-img" />
+                  <img src="./images/event/img-2.webp" alt="event-img" />
                 </div>
                 <p class="event__item-date">23.06.23</p>
                 <p class="event__item-title">Кетчупы «Помидорка» вышли в новом дизайне</p>
                 <div class="event__item-more">
-                  <span><img loading="lazy" src="./images/event/plus.svg" alt="plus" /></span>
+                  <span><img src="./images/event/plus.svg" alt="plus" /></span>
                   <p>Подробнее</p>
                 </div>
               </div>
               <div class="event__item">
                 <div class="event__item-img">
-                  <img loading="lazy" src="./images/event/img-3.webp" alt="event-img" />
+                  <img src="./images/event/img-3.webp" alt="event-img" />
                 </div>
                 <p class="event__item-date">23.06.23</p>
                 <p class="event__item-title">«Помидорка» выпустила томатную пасту в новом объеме</p>
                 <div class="event__item-more">
-                  <span><img loading="lazy" src="./images/event/plus.svg" alt="plus" /></span>
+                  <span><img src="./images/event/plus.svg" alt="plus" /></span>
                   <p>Подробнее</p>
                 </div>
               </div>
               <div class="event__item">
                 <div class="event__item-img">
-                  <img loading="lazy" src="./images/event/img-4.webp" alt="event-img" />
+                  <img src="./images/event/img-4.webp" alt="event-img" />
                 </div>
                 <p class="event__item-date">23.06.23</p>
                 <p class="event__item-title">Выпуск "Шоу рецептов и шалостей" к новому году</p>
                 <div class="event__item-more">
-                  <span><img loading="lazy" src="./images/event/plus.svg" alt="plus" /></span>
+                  <span><img src="./images/event/plus.svg" alt="plus" /></span>
                   <p>Подробнее</p>
                 </div>
               </div>
               <div class="event__item">
                 <div class="event__item-img">
-                  <img loading="lazy" src="./images/event/img-5.webp" alt="event-img" />
+                  <img src="./images/event/img-5.webp" alt="event-img" />
                 </div>
                 <p class="event__item-date">23.06.23</p>
                 <p class="event__item-title">Выпуск "Шоу рецептов и шалостей" к новому году</p>
                 <div class="event__item-more">
-                  <span><img loading="lazy" src="./images/event/plus.svg" alt="plus" /></span>
+                  <span><img src="./images/event/plus.svg" alt="plus" /></span>
                   <p>Подробнее</p>
                 </div>
               </div>
               <div class="event__item">
                 <div class="event__item-img">
-                  <img loading="lazy" src="./images/event/img-6.webp" alt="event-img" />
+                  <img src="./images/event/img-6.webp" alt="event-img" />
                 </div>
                 <p class="event__item-date">23.06.23</p>
                 <p class="event__item-title">«Помидорка» выпустила линейку томатных соусов</p>
                 <div class="event__item-more">
-                  <span><img loading="lazy" src="./images/event/plus.svg" alt="plus" /></span>
+                  <span><img src="./images/event/plus.svg" alt="plus" /></span>
                   <p>Подробнее</p>
                 </div>
               </div>
@@ -2931,7 +2933,7 @@
         <div class="event__modal">
           <div class="event__content">
             <div class="event__modal-left">
-              <img loading="lazy" src="./images/event/modal.webp" alt="" />
+              <img src="./images/event/modal.webp" alt="" />
             </div>
             <div class="event__modal-right">
               <p class="event__modal-date">15.06.2023</p>
@@ -2966,16 +2968,16 @@
             <h3 class="buy-modal__title">Выберите магазин:</h3>
             <div class="buy-modal__items">
               <a class="buy-modal__item" href="#">
-                <img loading="lazy" src="./images/shop/vprok.svg" alt="vprok" />
+                <img src="./images/shop/vprok.svg" alt="vprok" />
               </a>
               <a class="buy-modal__item" href="#">
-                <img loading="lazy" src="./images/shop/ozon.svg" alt="ozon" />
+                <img src="./images/shop/ozon.svg" alt="ozon" />
               </a>
               <a class="buy-modal__item" href="#">
-                <img loading="lazy" src="./images/shop/wildberries.svg" alt="wildberries" />
+                <img src="./images/shop/wildberries.svg" alt="wildberries" />
               </a>
               <a class="buy-modal__item" href="#">
-                <img loading="lazy" src="./images/shop/sber-market.webp" alt="sber-market" />
+                <img src="./images/shop/sber-market.webp" alt="sber-market" />
               </a>
               <a class="buy-modal__item" href="#">
                 <img src="./images/shop/yandex-market.svg" alt="yandex-market" />
@@ -2993,7 +2995,7 @@
         <div class="footer__top">
           <div class="footer__left">
             <a class="footer__logo" href="./index.html">
-              <img loading="lazy" src="./images/logo.webp" alt="footer-logo" />
+              <img src="./images/logo.webp" alt="footer-logo" />
             </a>
           </div>
 
@@ -3058,6 +3060,7 @@
     <!-- Footer area End -->
 
     <!-- Js settings -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
