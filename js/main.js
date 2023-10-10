@@ -1,47 +1,36 @@
 AOS.init({
-  // Global settings:
-  disable: "phone", // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: "aos-init", // class applied after initialization
-  animatedClassName: "aos-animate", // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 100, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 800, // values from 0 to 3000, with step 50ms
-  easing: "ease", // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+  disable: "phone",
+  startEvent: "DOMContentLoaded",
+  initClassName: "aos-init",
+  animatedClassName: "aos-animate",
+  useClassNames: !1,
+  disableMutationObserver: !1,
+  debounceDelay: 50,
+  throttleDelay: 99,
+  offset: 100,
+  delay: 0,
+  duration: 800,
+  easing: "ease",
+  once: !1,
+  mirror: !1,
+  anchorPlacement: "top-bottom",
 });
+// gsap.registerPlugin(ScrollTrigger);
+// const tl = gsap.timeline();
 
-
-
-//preloader
-// const preloader = document.querySelector(".preloader");
-// const preloaderLogo = document.querySelector(".preloader__logo");
-// const preloaderProgress = document.querySelector(".preloader__progress");
-// const progressBar = document.querySelector(".preloader__progress-inner");
-// let count = 4;
-// let loading = setInterval(animate, 50);
-// document.body.classList.add("no-scroll");
-
-// function animate() {
-//   if (count > 110) {
-//     clearInterval(loading);
-//     preloaderProgress.style.opacity = "0";
-//     preloaderLogo.classList.add("preloader__logo--active");
-//     preloader.classList.add("preloader--active");
-//     document.body.classList.remove("no-scroll");
-//   } else {
-//     count += 2.5;
-//     progressBar.style.width = count + "%";
-//   }
-// }
+// tl.fromTo(
+//   ".intro__bg",
+//   {
+//     opacity: 0,
+//     scale: 1.3,
+//     duration: 1,
+//   },
+//   {
+//     opacity: 1,
+//     scale: 1,
+//   },
+//   0.3
+// );
 
 // Burger Menu
 const hamburger = document.querySelector(".hamburger");

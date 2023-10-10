@@ -1,9 +1,10 @@
 .about {
+  width: 100%;
   padding: 130px 0 564px;
   position: relative;
+  overflow: hidden;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  overflow: hidden;
 
   &__top {
     width: 100%;
@@ -22,10 +23,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: url("../images/about/about-bg.webp");
-    background-position: center bottom; // x y
-    background-size: cover;
-    background-repeat: no-repeat;
+    object-fit: cover;
   }
 
   &__inner {
@@ -62,15 +60,13 @@
     }
   }
 }
-
-@media (max-width: 1920px) {
+@media (max-width: 1600px) {
   .about {
     &__bot {
-      background-size: contain;
+      object-fit: contain;object-position: center bottom;
     }
   }
 }
-
 @media (max-width: 1440px) {
   .about {
     padding: 130px 0 392px;

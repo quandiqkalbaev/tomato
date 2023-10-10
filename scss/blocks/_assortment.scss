@@ -1,4 +1,5 @@
 .assortment {
+  margin-top: -40px;
   width: 100%;
   padding: 130px 0 65px;
   background-color: #f7f7f7;
@@ -73,7 +74,9 @@
     padding-bottom: 100px;
     margin: 0 90px;
     overflow: hidden;
-
+    &-wrapper {
+      transition: all 600ms linear !important;
+    }
     .item {
       width: 400px;
       position: relative;
@@ -333,7 +336,7 @@
 
 @media (max-width: 1440px) {
   .assortment {
-    padding: 130px 0 50px;
+    padding: 100px 0 50px;
 
     &-container {
       padding: 0 20px;
@@ -415,6 +418,8 @@
 
 @media (max-width: 768px) {
   .assortment {
+    padding: 50px 0 35px;
+
     &-container {
       padding: 0 0 0 15px;
     }

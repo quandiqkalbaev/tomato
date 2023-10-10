@@ -190,6 +190,8 @@
 
 @media (max-width: 1440px) {
   .footer {
+    margin-top: 100px;
+
     &__contacts,
     &__socials {
       margin-right: 155px;
@@ -216,6 +218,11 @@
     &__bot {
       padding: 0 20px;
     }
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 70px;
   }
 }
 @media (max-width: 680px) {

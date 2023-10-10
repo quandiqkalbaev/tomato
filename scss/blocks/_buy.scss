@@ -104,6 +104,8 @@
 
 @media (max-width: 1440px) {
   .buy {
+    margin-top: 100px;
+
     &__item {
       img {
         max-width: 155px;
@@ -149,7 +151,11 @@
     }
   }
 }
-
+@media (max-width: 768px) {
+  .buy {
+    margin-top: 70px;
+  }
+}
 @media (max-width: 576px) {
   .buy {
     &__title {

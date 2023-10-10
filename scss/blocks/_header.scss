@@ -88,26 +88,18 @@
       transition: all 0.3s;
       background-color: transparent;
 
-      &::before {
-        content: "";
-        width: 24px;
-        height: 2.1px;
-        position: absolute;
-        left: 0;
-
-        background: #f02c38;
-        transition: all 0.3s;
-        transform: translateY(-3px);
-      }
+      &::before,
       &::after {
         content: "";
         width: 24px;
         height: 2.1px;
         position: absolute;
         left: 0;
-
-        background: #f02c38;
+        background: $primary;
         transition: all 0.3s;
+        transform: translateY(-3px);
+      }
+      &::after {
         transform: translateY(3px);
       }
     }

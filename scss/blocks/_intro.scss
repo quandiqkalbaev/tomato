@@ -2,16 +2,27 @@
   width: 100%;
   min-height: 100vh;
   padding-top: 94px;
-  background-image: url("../images/intro/intro-bg.webp");
-  background-position: center top; // x y
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
+
+  &__bg {
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   &-container {
     max-width: 1470px;
     padding: 0 15px;
     margin: 0 auto;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
   }
 
   &__title {
@@ -25,16 +36,14 @@
 
   &__bot {
     width: 100%;
-    height: 360px;
+    object-fit: cover;
     position: absolute;
     left: 0;
-    bottom: -2px;
-    background-image: url("../images/intro/intro-bot.webp");
-    background-position: center center; // x y
-    background-size: cover;
-    background-repeat: no-repeat;
+    bottom: -550px;
+    right: 0;
   }
 }
+
 
 @media (max-width: 992px) {
   .intro {
@@ -47,7 +56,6 @@
 @media (max-width: 768px) {
   .intro {
     background-position: 70% top;
-
     &__title {
       margin: 0 auto;
       padding: 0;

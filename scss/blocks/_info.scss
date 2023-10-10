@@ -1,17 +1,26 @@
 .info {
   padding: 32px 0 200px;
   position: relative;
-
+  background-color: $white;
+  &__top {
+    position: absolute;
+    left: 0;
+    bottom: calc(100% - 2px);
+    width: 100%;
+    object-position: center 0;
+    object-fit: cover;
+  }
   &::after {
     content: "";
     position: absolute;
     left: 50%;
-    top: 100%;
+    bottom: 0;
     transform: translateX(-50%);
     width: calc(100% - 100px);
     height: 1px;
     background: #e1ddd3;
   }
+
   &-container {
     max-width: 1820px;
     padding: 0 153px;
@@ -28,6 +37,7 @@
     line-height: 140%;
   }
 }
+
 @media (max-width: 1440px) {
   .info {
     padding: 58px 0 200px;
@@ -50,7 +60,6 @@
 }
 @media (max-width: 1240px) {
   .info {
-    padding: 0 0 130px 0;
     &-container {
       padding: 0 30px;
     }
@@ -59,7 +68,7 @@
       column-gap: 70px;
     }
     &__text {
-      margin-top: 34px;
+      //   margin-top: 34px;
       font-size: 20px;
     }
   }
