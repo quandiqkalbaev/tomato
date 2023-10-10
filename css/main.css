@@ -590,6 +590,9 @@ body {
     padding: 0 30px;
     max-width: 1400px;
   }
+  .about__items {
+    margin-top: 95px;
+  }
 }
 @media (max-width: 1160px) {
   .about {
@@ -617,6 +620,7 @@ body {
     padding: 0 15px;
   }
   .about__items {
+    margin-top: 50px;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     gap: 60px;
@@ -635,7 +639,7 @@ body {
 .assortment {
   margin-top: -40px;
   width: 100%;
-  padding: 130px 0 65px;
+  padding: 170px 0 65px;
   background-color: #f7f7f7;
 }
 .assortment-container {
@@ -924,7 +928,7 @@ body {
 }
 @media (max-width: 1440px) {
   .assortment {
-    padding: 100px 0 50px;
+    padding: 140px 0 50px;
   }
   .assortment-container {
     padding: 0 20px;
@@ -991,7 +995,7 @@ body {
 }
 @media (max-width: 768px) {
   .assortment {
-    padding: 50px 0 35px;
+    padding: 90px 0 35px;
   }
   .assortment-container {
     padding: 0 0 0 15px;
