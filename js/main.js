@@ -15,22 +15,71 @@ AOS.init({
   mirror: !1,
   anchorPlacement: "top-bottom",
 });
-// gsap.registerPlugin(ScrollTrigger);
-// const tl = gsap.timeline();
 
-// tl.fromTo(
-//   ".intro__bg",
-//   {
-//     opacity: 0,
-//     scale: 1.3,
-//     duration: 1,
-//   },
-//   {
-//     opacity: 1,
-//     scale: 1,
-//   },
-//   0.3
-// );
+//preloader
+const preloader = document.querySelector(".preloader");
+const preloaderLogo = document.querySelector(".preloader__logo");
+const preloaderProgress = document.querySelector(".preloader__progress");
+const progressBar = document.querySelector(".preloader__progress-inner");
+let count = 4;
+let loading = setInterval(animate, 50);
+let loadTime = performance.now() / 100;
+document.body.classList.add("no-scroll");
+
+function animate() {
+  if (count > 100) {
+    clearInterval(loading);
+    preloaderProgress.style.opacity = "0";
+    preloaderLogo.classList.add("preloader__logo--active");
+    preloader.classList.add("preloader--active");
+    document.body.classList.remove("no-scroll");
+    setTimeout(() => {
+      preloader.remove();
+    }, 500);
+  } else {
+    count += loadTime;
+    progressBar.style.width = count + "%";
+  }
+}
+
+gsap.registerPlugin(ScrollTrigger);
+const tl = gsap.timeline();
+
+tl.fromTo(
+	'.intro__bg',
+	{
+		opacity: 0,
+		scale: 1.3,
+		duration: 1,
+	},
+	{
+		opacity: 1,
+		scale: 1,
+	},
+	0.3
+).fromTo(
+	'.info__top',
+	{
+		y: 200,
+		opacity: 0,
+		duration: 1,
+	},
+	{
+		y: 0,
+		opacity: 1,
+	},
+	1.2
+);
+
+gsap.to('.info__top', {
+	scrollTrigger: {
+		trigger: '.intro',
+		start: '0 0',
+		end: '500 0',
+		scrub: true,
+	},
+	yPercent: -27,
+});
 
 // Burger Menu
 const hamburger = document.querySelector(".hamburger");

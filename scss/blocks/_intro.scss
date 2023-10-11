@@ -56,6 +56,14 @@
 @media (max-width: 768px) {
   .intro {
     background-position: 70% top;
+
+    &__inner {
+			width: 100%;
+			height: calc(100vh - 98px);
+			display: flex;
+			flex-direction: column;
+		}
+
     &__title {
       margin: 0 auto;
       padding: 0;

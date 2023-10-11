@@ -5,10 +5,10 @@
   &__top {
     position: absolute;
     left: 0;
-    bottom: calc(100% - 2px);
     width: 100%;
     object-position: center 0;
     object-fit: cover;
+    bottom: calc(100% - 190px);
   }
   &::after {
     content: "";
