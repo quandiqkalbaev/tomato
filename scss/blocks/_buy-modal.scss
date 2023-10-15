@@ -1,296 +1,292 @@
 .buy-modal {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s linear;
-  pointer-events: none;
-  overflow-y: auto;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s linear;
+	pointer-events: none;
+	overflow-y: auto;
 
-  &--active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-  }
+	&--active {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+	}
 
-  &__bg {
-    width: 100%;
-    height: 100%;
-    padding: 271px 50px 50px;
-    background: rgba($black, 0.4);
-    overflow-y: auto;
-  }
+	&__bg {
+		width: 100%;
+		height: 100%;
+		padding: 50px;
+		background: rgba($black, 0.4);
+		overflow-y: auto;
+	}
 
-  &__body {
-    max-width: 1514px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 70px 20px 20px;
-    border-radius: 10px;
-    background: $white;
-    position: relative;
-  }
+	&__body {
+		max-width: 1514px;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 70px 20px 20px;
+		border-radius: 10px;
+		background: $white;
+		position: relative;
+	}
 
-  &__close {
-    width: 13px;
-    height: 13px;
-    border: none;
-    background: transparent;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+	&__close {
+		width: 13px;
+		height: 13px;
+		border: none;
+		background: transparent;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		cursor: pointer;
 
-    span {
-      display: block;
-      width: 16px;
-      height: 16px;
-      position: relative;
+		span {
+			display: block;
+			width: 16px;
+			height: 16px;
+			position: relative;
 
-      &::before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        display: block;
-        width: 16px;
-        height: 2px;
-        background: $primary;
-        transform: translate(-50%, -50%) rotate(-45deg);
-        transition: all 0.2s linear;
-      }
+			&::before {
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				display: block;
+				width: 16px;
+				height: 2px;
+				background: $primary;
+				transform: translate(-50%, -50%) rotate(-45deg);
+				transition: all 0.2s linear;
+			}
 
-      &::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        display: block;
-        width: 16px;
-        height: 2px;
-        background: $primary;
-        transform: translate(-50%, -50%) rotate(45deg);
-        transition: all 0.2s linear;
-      }
-    }
+			&::after {
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				display: block;
+				width: 16px;
+				height: 2px;
+				background: $primary;
+				transform: translate(-50%, -50%) rotate(45deg);
+				transition: all 0.2s linear;
+			}
+		}
 
-    &--active {
-      span {
-        display: block;
-        width: 13px;
-        height: 13px;
-        position: relative;
+		&--active {
+			span {
+				display: block;
+				width: 13px;
+				height: 13px;
+				position: relative;
 
-        &::before {
-          content: "";
-          display: block;
-          width: 16px;
-          height: 2.1px;
-          background: $primary;
-          transform: translate(-50%, -50%) rotate(0);
-        }
+				&::before {
+					content: '';
+					display: block;
+					width: 16px;
+					height: 2.1px;
+					background: $primary;
+					transform: translate(-50%, -50%) rotate(0);
+				}
 
-        &::after {
-          content: "";
-          display: block;
-          width: 16px;
-          height: 2.1px;
-          background: $primary;
-          transform: translate(-50%, -50%) rotate(0);
-        }
-      }
-    }
-  }
+				&::after {
+					content: '';
+					display: block;
+					width: 16px;
+					height: 2.1px;
+					background: $primary;
+					transform: translate(-50%, -50%) rotate(0);
+				}
+			}
+		}
+	}
 
-  &__title {
-    font-size: 32px;
-    font-weight: 500;
-    color: $dark;
-    line-height: 1.4;
-    text-align: center;
-  }
+	&__title {
+		font-size: 32px;
+		font-weight: 500;
+		color: $dark;
+		line-height: 1.4;
+		text-align: center;
+	}
 
-  &__items {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border-color: #f3f3f3;
-    border-top: 1px solid #f3f3f3;
-    border-left: 1px solid #f3f3f3;
-  }
+	&__items {
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		border-color: #f3f3f3;
+		border-top: 1px solid #f3f3f3;
+		border-left: 1px solid #f3f3f3;
+	}
 
-  &__item {
-    height: 378px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #f3f3f3;
-    border-width: 0 1px 1px 0;
-  }
+	&__item {
+		height: 378px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #f3f3f3;
+		border-width: 0 1px 1px 0;
+	}
 }
 
 @media (max-width: 1920px) {
-  .buy-modal {
-    &__bg {
-      padding-top: 132px;
-    }
+	.buy-modal {
+		&__bg {
+			padding: 15px;
+		}
 
-    &__body {
-      max-width: 1340px;
-    }
+		&__body {
+			max-width: 1340px;
+		}
 
-    &__item {
-      height: 334px;
+		&__item {
+			height: 334px;
 
-      &:nth-of-type(1) {
-        img {
-          width: 200px;
-        }
-      }
+			&:nth-of-type(1) {
+				img {
+					width: 200px;
+				}
+			}
 
-      &:nth-of-type(2) {
-        img {
-          width: 161px;
-        }
-      }
+			&:nth-of-type(2) {
+				img {
+					width: 161px;
+				}
+			}
 
-      &:nth-of-type(3) {
-        img {
-          width: 228px;
-        }
-      }
+			&:nth-of-type(3) {
+				img {
+					width: 228px;
+				}
+			}
 
-      &:nth-of-type(4) {
-        img {
-          width: 247px;
-        }
-      }
+			&:nth-of-type(4) {
+				img {
+					width: 247px;
+				}
+			}
 
-      &:nth-of-type(5) {
-        img {
-          width: 237px;
-        }
-      }
-    }
-  }
+			&:nth-of-type(5) {
+				img {
+					width: 237px;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 1440px) {
-  .buy-modal {
-    &__bg {
-      padding: 132px 15px 15px;
-    }
+	.buy-modal {
+		&__body {
+			max-width: 738px;
+			padding: 40px 20px 20px;
+		}
 
-    &__body {
-      max-width: 738px;
-      padding: 40px 20px 20px;
-    }
+		&__title {
+			font-size: 28px;
+		}
 
-    &__title {
-      font-size: 28px;
-    }
+		&__items {
+			margin-top: 35px;
+			grid-template-columns: repeat(2, 1fr);
+		}
 
-    &__items {
-      margin-top: 35px;
-      grid-template-columns: repeat(2, 1fr);
-    }
+		&__item {
+			height: 269px;
 
-    &__item {
-      height: 269px;
+			&:nth-of-type(1) {
+				img {
+					width: 161px;
+				}
+			}
 
-      &:nth-of-type(1) {
-        img {
-          width: 161px;
-        }
-      }
+			&:nth-of-type(2) {
+				img {
+					width: 130px;
+				}
+			}
 
-      &:nth-of-type(2) {
-        img {
-          width: 130px;
-        }
-      }
+			&:nth-of-type(3) {
+				img {
+					width: 184px;
+				}
+			}
 
-      &:nth-of-type(3) {
-        img {
-          width: 184px;
-        }
-      }
+			&:nth-of-type(4) {
+				img {
+					width: 200px;
+				}
+			}
 
-      &:nth-of-type(4) {
-        img {
-          width: 200px;
-        }
-      }
-
-      &:nth-of-type(5) {
-        img {
-          width: 191px;
-        }
-      }
-    }
-  }
+			&:nth-of-type(5) {
+				img {
+					width: 191px;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 768px) {
-  .buy-modal {
-    &__bg {
-      padding: 50px 0 15px;
-    }
+	.buy-modal {
+		&__bg {
+			padding: 15px 0;
+		}
 
-    &__close {
-      top: 15px;
-      right: 15px;
-    }
+		&__close {
+			top: 15px;
+			right: 15px;
+		}
 
-    &__body {
-      padding: 30px 15px 15px;
-    }
+		&__body {
+			padding: 30px 15px 15px;
+		}
 
-    &__title {
-      font-size: 24px;
-    }
+		&__title {
+			font-size: 24px;
+		}
 
-    &__items {
-      margin-top: 26px;
-    }
+		&__items {
+			margin-top: 26px;
+		}
 
-    &__item {
-      height: 112px;
+		&__item {
+			height: 112px;
 
-      &:nth-of-type(1) {
-        img {
-          width: 86px;
-        }
-      }
+			&:nth-of-type(1) {
+				img {
+					width: 86px;
+				}
+			}
 
-      &:nth-of-type(2) {
-        img {
-          width: 74px;
-        }
-      }
+			&:nth-of-type(2) {
+				img {
+					width: 74px;
+				}
+			}
 
-      &:nth-of-type(3) {
-        img {
-          width: 96px;
-        }
-      }
+			&:nth-of-type(3) {
+				img {
+					width: 96px;
+				}
+			}
 
-      &:nth-of-type(4) {
-        img {
-          width: 102px;
-        }
-      }
+			&:nth-of-type(4) {
+				img {
+					width: 102px;
+				}
+			}
 
-      &:nth-of-type(5) {
-        img {
-          width: 80px;
-        }
-      }
-    }
-  }
+			&:nth-of-type(5) {
+				img {
+					width: 80px;
+				}
+			}
+		}
+	}
 }

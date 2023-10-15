@@ -5,14 +5,14 @@
   z-index: 2;
 
   &-container {
-    max-width: 1850px;
-    padding: 0 15px;
+    max-width: 2020px;
+    padding: 0 50px;
     margin: 0 auto;
   }
 
   &__logo {
-    transform: rotate(1.932deg);
     z-index: 3;
+    max-width: 136px;
   }
 
   &__inner {
@@ -121,7 +121,13 @@
     }
   }
 }
-
+@media (max-width: 1440px) {
+  .header {
+    &__logo {
+      max-width: 100px;
+    }
+  }
+}
 @media (max-width: 992px) {
   .header {
     &__nav-list {

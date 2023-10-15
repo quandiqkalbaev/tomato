@@ -71,8 +71,7 @@
   }
 
   &__slider {
-    padding-bottom: 100px;
-    margin: 0 90px;
+    padding: 0 111px 100px;
     overflow: hidden;
     &-wrapper {
       transition: all 600ms linear !important;
@@ -81,20 +80,10 @@
       width: 400px;
       position: relative;
       overflow: hidden;
-
-      &:hover {
-        border-radius: 20px;
-        cursor: pointer;
-        .item__back {
-          opacity: 1;
-          visibility: visible;
-          pointer-events: all;
-        }
-      }
+      transition: all 0.2s linear !important;
 
       &__front {
         width: 100%;
-
         &-img {
           display: flex;
           align-items: center;
@@ -123,8 +112,7 @@
         background: $white;
         transition: all 0.2s linear;
         opacity: 0;
-        visibility: visible;
-        pointer-events: none;
+        visibility: hidden;
 
         &-title {
           font-size: 22px;
@@ -172,8 +160,10 @@
           border-radius: 100px;
           border: 1px solid #e1ddd3;
           transition: all 0.2s linear;
+          pointer-events: none;
 
           @media (hover: hover) {
+            pointer-events: all;
             &:hover {
               color: #f02c38;
               border: 1px solid #f02c38;
@@ -189,6 +179,7 @@
         }
 
         &-buy {
+          pointer-events: none;
           width: 100%;
           margin-top: 13px;
           padding: 14px 0;
@@ -202,8 +193,9 @@
           background: #f02c38;
           cursor: pointer;
           transition: all 0.2s linear;
-
           @media (hover: hover) {
+            pointer-events: all;
+
             &:hover {
               background: #d9212c;
             }
@@ -213,6 +205,16 @@
             &:active {
               background: #d9212c;
             }
+          }
+        }
+      }
+      @media (hover: hover) {
+        &:hover {
+          border-radius: 20px;
+          cursor: pointer;
+          .item__back {
+            opacity: 1;
+            visibility: visible;
           }
         }
       }
@@ -259,7 +261,7 @@
       background: transparent;
 
       svg {
-        fill: rgba($dark, 0.5);
+        fill: #7d7d7d;
       }
     }
 
@@ -274,6 +276,7 @@
       background: #f02c38;
       cursor: pointer;
       transition: all 0.2s linear;
+      z-index: 2;
 
       svg {
         width: 7px;
@@ -313,14 +316,14 @@
       position: absolute;
       top: calc(50% - 50px);
       transform: translateY(-50%);
-      left: 0;
+      left: 50px;
     }
 
     &-next {
       position: absolute;
       top: calc(50% - 50px);
       transform: translateY(-50%);
-      right: 0;
+      right: 50px;
     }
   }
 }
@@ -328,7 +331,6 @@
 @media (max-width: 1920px) {
   .assortment {
     &__slider {
-      margin: 0 60px;
       padding-bottom: 114px;
     }
   }
@@ -361,7 +363,10 @@
 
     &__slider {
       padding-bottom: 100px;
-      margin: 0 47px;
+
+      .item__front-weight {
+        margin-top: 4px;
+      }
 
       .swiper-button-disabled {
         background: transparent;
@@ -406,11 +411,11 @@
       }
 
       &-prev {
-        left: -20px;
+        left: 0;
       }
 
       &-next {
-        right: -20px;
+        right: 0;
       }
     }
   }
@@ -448,15 +453,10 @@
         flex: 1 0 auto;
         text-align: center;
       }
-
-      &__catalog {
-        padding-right: 15px;
-      }
     }
 
     &__slider {
       padding-bottom: 70px;
-      margin: 0 27px;
 
       .item {
         &:hover {
@@ -489,7 +489,7 @@
         height: 26px;
         min-width: 37px;
         min-height: 26px;
-        left: -15px;
+        left: 15px;
         top: calc(50% - 35px);
       }
 
@@ -498,7 +498,7 @@
         height: 26px;
         min-width: 37px;
         min-height: 26px;
-        right: 0;
+        right: 15px;
         top: calc(50% - 35px);
       }
 
