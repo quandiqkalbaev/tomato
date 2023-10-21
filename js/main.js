@@ -20,59 +20,60 @@ try {
 } catch (e) {}
 
 // Preloader
-// try {
-// 	const preloader = document.querySelector('.preloader');
-// 	const preloaderLogo = document.querySelector('.preloader__logo');
-// 	const preloaderProgress = document.querySelector('.preloader__progress');
-// 	const progressBar = document.querySelector('.preloader__progress-inner');
-// 	let count = 4;
-// 	let loading = setInterval(animate, 50);
-// 	document.body.classList.add('no-scroll');
+try {
+	const preloader = document.querySelector('.preloader');
+	const preloaderLogo = document.querySelector('.preloader__logo');
+	const preloaderProgress = document.querySelector('.preloader__progress');
+	const progressBar = document.querySelector('.preloader__progress-inner');
+	let count = 4;
+	let loading = setInterval(animate, 50);
+	document.body.classList.add('no-scroll');
 
-// 	function animate() {
-// 		if (count > 110) {
-// 			clearInterval(loading);
-// 			preloaderProgress.style.opacity = '0';
-// 			preloaderLogo.classList.add('preloader__logo--active');
-// 			preloader.classList.add('preloader--active');
-// 			document.body.classList.remove('no-scroll');
-// 		} else {
-// 			count += 2.5;
-// 			progressBar.style.width = count + '%';
-// 		}
-// 	}
-// } catch (e) {}
+	function animate() {
+		if (count > 110) {
+			clearInterval(loading);
+			preloaderProgress.style.opacity = '0';
+			preloaderLogo.classList.add('preloader__logo--active');
+			preloader.classList.add('preloader--active');
+			document.body.classList.remove('no-scroll');
+		} else {
+			count += 2.5;
+			progressBar.style.width = count + '%';
+		}
+	}
+} catch (e) {}
 
 // GSAP Animation
 try {
 	gsap.registerPlugin(ScrollTrigger);
 	const tl = gsap.timeline();
+	tl.delay(2);
 	tl.fromTo(
 		'.intro__bg',
-		{ opacity: 0, scale: 1.3, duration: 0.5 },
+		{ opacity: 0, scale: 1.5, duration: 1 },
 		{ opacity: 1, scale: 1 },
-		0.3
+		0.4
 	)
 		.fromTo(
 			'.header',
 			{
 				opacity: 0,
-				duration: 0.5,
+				duration: 1,
 			},
 			{ opacity: 1 },
-			0.6
+			0.8
 		)
 		.fromTo(
 			'.intro__title',
-			{ y: 100, opacity: 0, duration: 0.5 },
+			{ y: 100, opacity: 0, duration: 1 },
 			{ y: 0, opacity: 1 },
-			0.9
+			1.2
 		)
 		.fromTo(
 			'.info__top',
-			{ y: 200, opacity: 0, duration: 0.5 },
+			{ y: 200, opacity: 0, duration: 1 },
 			{ y: 0, opacity: 1 },
-			1.2
+			1.6
 		);
 
 	gsap.to('.info__top', {
@@ -377,11 +378,23 @@ try {
 	});
 } catch (e) {}
 
+// Show Assortment Slide Back
+try {
+	const btns = document.querySelectorAll('.assortment__slider .item__btn');
+
+	btns.forEach(btn => {
+		btn.addEventListener('click', () => {
+			const itemBack = btn.previousElementSibling;
+			itemBack.classList.toggle('item__back--active');
+		});
+	});
+} catch (e) {}
+
 // Recipe Slider
 try {
 	const recipeSlider = new Swiper('.recipe__slider', {
 		slidesPerView: 1,
-		spaceBetween: 5,
+		spaceBetween: 200,
 		navigation: {
 			nextEl: '.recipe__slider-next',
 			prevEl: '.recipe__slider-prev',
@@ -458,7 +471,7 @@ try {
 	const buyBtn = document.querySelectorAll('.item__back-buy');
 	const buyModal = document.querySelector('.buy-modal');
 	const buyModalClose = buyModal.querySelector('.buy-modal__close');
-	
+
 	buyBtn.forEach(btn => {
 		btn.addEventListener('click', () => {
 			document.body.classList.add('no-scroll');
