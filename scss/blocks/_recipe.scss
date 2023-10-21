@@ -674,14 +674,13 @@
     }
 
     &__title {
-      padding-right: 15px;
       font-size: 36px;
     }
 
     .tabs {
       max-width: 100%;
       margin: 40px 0 30px;
-      padding-right: 15px;
+      padding:0 15px;
       flex-wrap: nowrap;
       justify-content: flex-start;
       overflow: auto;
