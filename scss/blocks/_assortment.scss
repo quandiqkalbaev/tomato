@@ -73,6 +73,18 @@
   &__slider {
     padding: 0 140px 110px;
     overflow: hidden;
+    &-wrapper {
+      transition: all 600ms linear !important;
+      @media (max-width: 1440px) {
+        transition: all 500ms linear !important;
+      }
+      @media (max-width: 768px) {
+        transition: all 400ms linear !important;
+      }
+      @media (max-width: 576px) {
+        transition: all 300ms linear !important;
+      }
+    }
 
     .item {
       width: 400px;
@@ -359,7 +371,6 @@
   }
   .swiper-slide {
     pointer-events: none;
-
     &-active,
     &-next {
       pointer-events: all;
@@ -387,7 +398,6 @@
       pointer-events: none;
     }
   }
-  
 }
 
 @media (max-width: 1920px) {
@@ -509,13 +519,12 @@
 
     &__title {
       max-width: 290px;
-      padding-right: 15px;
       font-size: 36px;
     }
 
     .tabs {
       margin: 40px 0 30px;
-      padding-right: 15px;
+      padding: 0 15px;
       flex-wrap: nowrap;
       justify-content: flex-start;
       overflow: auto;
